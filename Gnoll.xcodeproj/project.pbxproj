@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11506F39201F7664006300F9 /* AppDelegate.swift */; };
+		11506F3C201F7664006300F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11506F3B201F7664006300F9 /* ViewController.swift */; };
+		11506F3F201F7664006300F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11506F3D201F7664006300F9 /* Main.storyboard */; };
+		11506F42201F7664006300F9 /* Gnoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */; };
+		11506F44201F7664006300F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11506F43201F7664006300F9 /* Assets.xcassets */; };
+		11506F47201F7664006300F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11506F45201F7664006300F9 /* LaunchScreen.storyboard */; };
+		11506F52201F7664006300F9 /* GnollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11506F51201F7664006300F9 /* GnollTests.swift */; };
+		11506F5D201F7664006300F9 /* GnollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11506F5C201F7664006300F9 /* GnollUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11506F4E201F7664006300F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11506F2E201F7664006300F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11506F35201F7664006300F9;
+			remoteInfo = Gnoll;
+		};
+		11506F59201F7664006300F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11506F2E201F7664006300F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11506F35201F7664006300F9;
+			remoteInfo = Gnoll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11506F36201F7664006300F9 /* Gnoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11506F39201F7664006300F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11506F3B201F7664006300F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11506F3E201F7664006300F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11506F41201F7664006300F9 /* Gnoll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gnoll.xcdatamodel; sourceTree = "<group>"; };
+		11506F43201F7664006300F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11506F46201F7664006300F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11506F48201F7664006300F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11506F4D201F7664006300F9 /* GnollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11506F51201F7664006300F9 /* GnollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnollTests.swift; sourceTree = "<group>"; };
+		11506F53201F7664006300F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11506F58201F7664006300F9 /* GnollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11506F5C201F7664006300F9 /* GnollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnollUITests.swift; sourceTree = "<group>"; };
+		11506F5E201F7664006300F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11506F33201F7664006300F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11506F4A201F7664006300F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11506F55201F7664006300F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11506F2D201F7664006300F9 = {
+			isa = PBXGroup;
+			children = (
+				11506F38201F7664006300F9 /* Gnoll */,
+				11506F50201F7664006300F9 /* GnollTests */,
+				11506F5B201F7664006300F9 /* GnollUITests */,
+				11506F37201F7664006300F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11506F37201F7664006300F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11506F36201F7664006300F9 /* Gnoll.app */,
+				11506F4D201F7664006300F9 /* GnollTests.xctest */,
+				11506F58201F7664006300F9 /* GnollUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11506F38201F7664006300F9 /* Gnoll */ = {
+			isa = PBXGroup;
+			children = (
+				11506F39201F7664006300F9 /* AppDelegate.swift */,
+				11506F3B201F7664006300F9 /* ViewController.swift */,
+				11506F3D201F7664006300F9 /* Main.storyboard */,
+				11506F43201F7664006300F9 /* Assets.xcassets */,
+				11506F45201F7664006300F9 /* LaunchScreen.storyboard */,
+				11506F48201F7664006300F9 /* Info.plist */,
+				11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */,
+			);
+			path = Gnoll;
+			sourceTree = "<group>";
+		};
+		11506F50201F7664006300F9 /* GnollTests */ = {
+			isa = PBXGroup;
+			children = (
+				11506F51201F7664006300F9 /* GnollTests.swift */,
+				11506F53201F7664006300F9 /* Info.plist */,
+			);
+			path = GnollTests;
+			sourceTree = "<group>";
+		};
+		11506F5B201F7664006300F9 /* GnollUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11506F5C201F7664006300F9 /* GnollUITests.swift */,
+				11506F5E201F7664006300F9 /* Info.plist */,
+			);
+			path = GnollUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11506F35201F7664006300F9 /* Gnoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11506F61201F7664006300F9 /* Build configuration list for PBXNativeTarget "Gnoll" */;
+			buildPhases = (
+				11506F32201F7664006300F9 /* Sources */,
+				11506F33201F7664006300F9 /* Frameworks */,
+				11506F34201F7664006300F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gnoll;
+			productName = Gnoll;
+			productReference = 11506F36201F7664006300F9 /* Gnoll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11506F4C201F7664006300F9 /* GnollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11506F64201F7664006300F9 /* Build configuration list for PBXNativeTarget "GnollTests" */;
+			buildPhases = (
+				11506F49201F7664006300F9 /* Sources */,
+				11506F4A201F7664006300F9 /* Frameworks */,
+				11506F4B201F7664006300F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11506F4F201F7664006300F9 /* PBXTargetDependency */,
+			);
+			name = GnollTests;
+			productName = GnollTests;
+			productReference = 11506F4D201F7664006300F9 /* GnollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11506F57201F7664006300F9 /* GnollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11506F67201F7664006300F9 /* Build configuration list for PBXNativeTarget "GnollUITests" */;
+			buildPhases = (
+				11506F54201F7664006300F9 /* Sources */,
+				11506F55201F7664006300F9 /* Frameworks */,
+				11506F56201F7664006300F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11506F5A201F7664006300F9 /* PBXTargetDependency */,
+			);
+			name = GnollUITests;
+			productName = GnollUITests;
+			productReference = 11506F58201F7664006300F9 /* GnollUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11506F2E201F7664006300F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jovito Royeca";
+				TargetAttributes = {
+					11506F35201F7664006300F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					11506F4C201F7664006300F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11506F35201F7664006300F9;
+					};
+					11506F57201F7664006300F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 11506F35201F7664006300F9;
+					};
+				};
+			};
+			buildConfigurationList = 11506F31201F7664006300F9 /* Build configuration list for PBXProject "Gnoll" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11506F2D201F7664006300F9;
+			productRefGroup = 11506F37201F7664006300F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11506F35201F7664006300F9 /* Gnoll */,
+				11506F4C201F7664006300F9 /* GnollTests */,
+				11506F57201F7664006300F9 /* GnollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11506F34201F7664006300F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11506F47201F7664006300F9 /* LaunchScreen.storyboard in Resources */,
+				11506F44201F7664006300F9 /* Assets.xcassets in Resources */,
+				11506F3F201F7664006300F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11506F4B201F7664006300F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11506F56201F7664006300F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11506F32201F7664006300F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11506F42201F7664006300F9 /* Gnoll.xcdatamodeld in Sources */,
+				11506F3C201F7664006300F9 /* ViewController.swift in Sources */,
+				11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11506F49201F7664006300F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11506F52201F7664006300F9 /* GnollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11506F54201F7664006300F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11506F5D201F7664006300F9 /* GnollUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11506F4F201F7664006300F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11506F35201F7664006300F9 /* Gnoll */;
+			targetProxy = 11506F4E201F7664006300F9 /* PBXContainerItemProxy */;
+		};
+		11506F5A201F7664006300F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11506F35201F7664006300F9 /* Gnoll */;
+			targetProxy = 11506F59201F7664006300F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11506F3D201F7664006300F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11506F3E201F7664006300F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11506F45201F7664006300F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11506F46201F7664006300F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11506F5F201F7664006300F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11506F60201F7664006300F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11506F62201F7664006300F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gnoll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.Gnoll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11506F63201F7664006300F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Gnoll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.Gnoll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11506F65201F7664006300F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnollTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.GnollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gnoll.app/Gnoll";
+			};
+			name = Debug;
+		};
+		11506F66201F7664006300F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnollTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.GnollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gnoll.app/Gnoll";
+			};
+			name = Release;
+		};
+		11506F68201F7664006300F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnollUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.GnollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gnoll;
+			};
+			name = Debug;
+		};
+		11506F69201F7664006300F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnollUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.GnollUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gnoll;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11506F31201F7664006300F9 /* Build configuration list for PBXProject "Gnoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11506F5F201F7664006300F9 /* Debug */,
+				11506F60201F7664006300F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11506F61201F7664006300F9 /* Build configuration list for PBXNativeTarget "Gnoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11506F62201F7664006300F9 /* Debug */,
+				11506F63201F7664006300F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11506F64201F7664006300F9 /* Build configuration list for PBXNativeTarget "GnollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11506F65201F7664006300F9 /* Debug */,
+				11506F66201F7664006300F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11506F67201F7664006300F9 /* Build configuration list for PBXNativeTarget "GnollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11506F68201F7664006300F9 /* Debug */,
+				11506F69201F7664006300F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11506F41201F7664006300F9 /* Gnoll.xcdatamodel */,
+			);
+			currentVersion = 11506F41201F7664006300F9 /* Gnoll.xcdatamodel */;
+			path = Gnoll.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 11506F2E201F7664006300F9 /* Project object */;
+}
