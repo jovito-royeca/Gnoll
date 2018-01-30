@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1636" y="212.74362818590706"/>
         </scene>
-        <!--View Controller-->
+        <!--Repositories View Controller-->
         <scene sceneID="Gkw-YN-Is6">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MvL-nE-2wQ" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MvL-nE-2wQ" customClass="RepositoriesViewController" customModule="Gnoll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h6l-9X-cJC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="2758" y="673"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="I9r-ns-b0b">
             <objects>
-                <tabBarController id="xvv-St-Phm" sceneMemberID="viewController">
+                <tabBarController id="xvv-St-Phm" customClass="MainViewController" customModule="Gnoll" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GY7-OI-xZi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -161,6 +161,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rYL-5j-dZr"/>
+        <segue reference="s8c-JU-5UU"/>
     </inferredMetricsTieBreakers>
 </document>

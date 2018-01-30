@@ -1,0 +1,6 @@
+framework module Pods_GnollUITests {
+  umbrella header "Pods-GnollUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
