@@ -99,6 +99,8 @@
 		11506F38201F7664006300F9 /* Gnoll */ = {
 			isa = PBXGroup;
 			children = (
+				116286C420200015007E12F4 /* Common */,
+				116286C320200006007E12F4 /* Modules */,
 				11506F39201F7664006300F9 /* AppDelegate.swift */,
 				11506F3B201F7664006300F9 /* ViewController.swift */,
 				11506F3D201F7664006300F9 /* Main.storyboard */,
@@ -126,6 +128,132 @@
 				11506F5E201F7664006300F9 /* Info.plist */,
 			);
 			path = GnollUITests;
+			sourceTree = "<group>";
+		};
+		116286C320200006007E12F4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				116286C7202000A3007E12F4 /* Repo List */,
+				116286C8202000AC007E12F4 /* Repo Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		116286C420200015007E12F4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				116286C620200042007E12F4 /* Data Store */,
+				116286C520200037007E12F4 /* GitHub */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		116286C520200037007E12F4 /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
+		116286C620200042007E12F4 /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Store";
+			sourceTree = "<group>";
+		};
+		116286C7202000A3007E12F4 /* Repo List */ = {
+			isa = PBXGroup;
+			children = (
+				116286CB20200764007E12F4 /* View */,
+				116286CC2020076B007E12F4 /* Interactor */,
+				116286CD20200781007E12F4 /* Presenter */,
+				116286CE202007A2007E12F4 /* Entity */,
+				116286CF202007AF007E12F4 /* Router */,
+			);
+			path = "Repo List";
+			sourceTree = "<group>";
+		};
+		116286C8202000AC007E12F4 /* Repo Details */ = {
+			isa = PBXGroup;
+			children = (
+				116286D420200805007E12F4 /* View */,
+				116286D320200801007E12F4 /* Interactor */,
+				116286D2202007FD007E12F4 /* Presenter */,
+				116286D1202007F8007E12F4 /* Entity */,
+				116286D0202007F4007E12F4 /* Router */,
+			);
+			path = "Repo Details";
+			sourceTree = "<group>";
+		};
+		116286CB20200764007E12F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		116286CC2020076B007E12F4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		116286CD20200781007E12F4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		116286CE202007A2007E12F4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		116286CF202007AF007E12F4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		116286D0202007F4007E12F4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		116286D1202007F8007E12F4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		116286D2202007FD007E12F4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		116286D320200801007E12F4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		116286D420200805007E12F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
