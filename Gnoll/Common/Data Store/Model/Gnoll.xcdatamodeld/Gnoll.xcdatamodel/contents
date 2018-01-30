@@ -27,12 +27,12 @@
         </attribute>
         <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="organizationsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="receivedEventsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="reposUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="siteAdmin" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="starredUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subscriptionsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="owner" inverseEntity="Repository" syncable="YES"/>
     </entity>
@@ -52,7 +52,6 @@
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="defaultBranch" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="deploymentsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="description_" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="downloadsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fork" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
@@ -92,10 +91,11 @@
         <attribute name="notificationsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="openIssues" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="openIssuesCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="private" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pullsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pushedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="releasesUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repositoryDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repositoryPrivate" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="sshUrl" optional="YES" attributeType="String" syncable="YES"/>
@@ -112,12 +112,30 @@
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="watchers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="watchersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RepositoryQuery" inverseName="items" inverseEntity="RepositoryQuery" syncable="YES"/>
         <relationship name="license" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="License" inverseName="repositories" inverseEntity="License" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="repositories" inverseEntity="Owner" syncable="YES"/>
+    </entity>
+    <entity name="RepositoryQuery" representedClassName="RepositoryQuery" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="incompleteResults" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="query" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="hyper.isPrimaryKey" value="true"/>
+                <entry key="sync.isPrimaryKey" value="true"/>
+            </userInfo>
+        </attribute>
+        <attribute name="totalCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="items" inverseEntity="Repository" syncable="YES"/>
+        <userInfo>
+            <entry key="hyper.isPrimaryKey" value="true"/>
+            <entry key="sync.isPrimaryKey" value="true"/>
+        </userInfo>
     </entity>
     <elements>
         <element name="License" positionX="-54" positionY="144" width="128" height="120"/>
         <element name="Owner" positionX="-36" positionY="153" width="128" height="300"/>
-        <element name="Repository" positionX="-63" positionY="-18" width="128" height="1125"/>
+        <element name="Repository" positionX="-63" positionY="-18" width="128" height="1140"/>
+        <element name="RepositoryQuery" positionX="-54" positionY="135" width="128" height="120"/>
     </elements>
 </model>

@@ -25,6 +25,30 @@
 		1107F29E20208331000E7579 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F28E20208331000E7579 /* Owner+CoreDataProperties.swift */; };
 		1107F29F20208331000E7579 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F28E20208331000E7579 /* Owner+CoreDataProperties.swift */; };
 		1107F2A020208331000E7579 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F28E20208331000E7579 /* Owner+CoreDataProperties.swift */; };
+		1107F2A3202088F9000E7579 /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2A2202088F9000E7579 /* LicenseEntity.swift */; };
+		1107F2A4202088F9000E7579 /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2A2202088F9000E7579 /* LicenseEntity.swift */; };
+		1107F2A5202088F9000E7579 /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2A2202088F9000E7579 /* LicenseEntity.swift */; };
+		1107F2A720208917000E7579 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2A620208917000E7579 /* RepositoryEntity.swift */; };
+		1107F2A820208917000E7579 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2A620208917000E7579 /* RepositoryEntity.swift */; };
+		1107F2A920208917000E7579 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2A620208917000E7579 /* RepositoryEntity.swift */; };
+		1107F2AB20208926000E7579 /* OwnerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2AA20208926000E7579 /* OwnerEntity.swift */; };
+		1107F2AC20208926000E7579 /* OwnerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2AA20208926000E7579 /* OwnerEntity.swift */; };
+		1107F2AD20208926000E7579 /* OwnerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2AA20208926000E7579 /* OwnerEntity.swift */; };
+		1107F2B12020941F000E7579 /* RepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B02020941F000E7579 /* RepositoriesInteractor.swift */; };
+		1107F2B22020941F000E7579 /* RepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B02020941F000E7579 /* RepositoriesInteractor.swift */; };
+		1107F2B32020941F000E7579 /* RepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B02020941F000E7579 /* RepositoriesInteractor.swift */; };
+		1107F2B5202094BB000E7579 /* RepositoriesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B4202094BB000E7579 /* RepositoriesDataManager.swift */; };
+		1107F2B6202094BB000E7579 /* RepositoriesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B4202094BB000E7579 /* RepositoriesDataManager.swift */; };
+		1107F2B7202094BB000E7579 /* RepositoriesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B4202094BB000E7579 /* RepositoriesDataManager.swift */; };
+		1107F2B920209607000E7579 /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B820209607000E7579 /* RepositoriesPresenter.swift */; };
+		1107F2BA20209607000E7579 /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B820209607000E7579 /* RepositoriesPresenter.swift */; };
+		1107F2BB20209607000E7579 /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107F2B820209607000E7579 /* RepositoriesPresenter.swift */; };
+		114074062020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114074042020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift */; };
+		114074072020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114074042020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift */; };
+		114074082020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114074042020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift */; };
+		114074092020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114074052020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift */; };
+		1140740A2020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114074052020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift */; };
+		1140740B2020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114074052020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift */; };
 		11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11506F39201F7664006300F9 /* AppDelegate.swift */; };
 		11506F3F201F7664006300F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11506F3D201F7664006300F9 /* Main.storyboard */; };
 		11506F42201F7664006300F9 /* Gnoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */; };
@@ -41,9 +65,9 @@
 		118FD63920206D4A00E17DEA /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63820206D4A00E17DEA /* RepositoriesRouter.swift */; };
 		118FD63A20206D4A00E17DEA /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63820206D4A00E17DEA /* RepositoriesRouter.swift */; };
 		118FD63B20206D4A00E17DEA /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63820206D4A00E17DEA /* RepositoriesRouter.swift */; };
-		118FD63D20206EA900E17DEA /* RepositoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesProtocol.swift */; };
-		118FD63E20206EA900E17DEA /* RepositoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesProtocol.swift */; };
-		118FD63F20206EA900E17DEA /* RepositoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesProtocol.swift */; };
+		118FD63D20206EA900E17DEA /* RepositoriesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesDelegate.swift */; };
+		118FD63E20206EA900E17DEA /* RepositoriesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesDelegate.swift */; };
+		118FD63F20206EA900E17DEA /* RepositoriesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesDelegate.swift */; };
 		118FD6432020811A00E17DEA /* Gnoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */; };
 		118FD6442020811B00E17DEA /* Gnoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */; };
 		269384F67217D695798A9EFA /* Pods_GnollUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0A16AA9997D18E5D7E88F6 /* Pods_GnollUITests.framework */; };
@@ -76,6 +100,14 @@
 		1107F28C20208331000E7579 /* Repository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1107F28D20208331000E7579 /* Owner+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1107F28E20208331000E7579 /* Owner+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Owner+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1107F2A2202088F9000E7579 /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
+		1107F2A620208917000E7579 /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		1107F2AA20208926000E7579 /* OwnerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerEntity.swift; sourceTree = "<group>"; };
+		1107F2B02020941F000E7579 /* RepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesInteractor.swift; sourceTree = "<group>"; };
+		1107F2B4202094BB000E7579 /* RepositoriesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesDataManager.swift; sourceTree = "<group>"; };
+		1107F2B820209607000E7579 /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
+		114074042020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryQuery+CoreDataClass.swift"; sourceTree = "<group>"; };
+		114074052020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryQuery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11506F36201F7664006300F9 /* Gnoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11506F39201F7664006300F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11506F3E201F7664006300F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,7 +124,7 @@
 		118FD6302020695200E17DEA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		118FD63420206A7E00E17DEA /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		118FD63820206D4A00E17DEA /* RepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRouter.swift; sourceTree = "<group>"; };
-		118FD63C20206EA900E17DEA /* RepositoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesProtocol.swift; sourceTree = "<group>"; };
+		118FD63C20206EA900E17DEA /* RepositoriesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesDelegate.swift; sourceTree = "<group>"; };
 		3F0111F4E1A42A305C728A3F /* Pods-GnollUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnollUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GnollUITests/Pods-GnollUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		706531F5425B5E5FF6B53DC6 /* Pods_Gnoll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gnoll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE983A0386269E8EB9EE031 /* Pods-GnollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnollTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GnollTests/Pods-GnollTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +166,27 @@
 		1107F2A120208385000E7579 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				1107F2A2202088F9000E7579 /* LicenseEntity.swift */,
+				1107F2A620208917000E7579 /* RepositoryEntity.swift */,
+				1107F2AA20208926000E7579 /* OwnerEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		1107F2AE202093AC000E7579 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1107F2B4202094BB000E7579 /* RepositoriesDataManager.swift */,
+				118FD63C20206EA900E17DEA /* RepositoriesDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1107F2AF202093D0000E7579 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		11506F2D201F7664006300F9 = {
@@ -206,17 +257,9 @@
 			children = (
 				1107F2A120208385000E7579 /* Entities */,
 				116286C620200042007E12F4 /* Data Store */,
-				116286C520200037007E12F4 /* GitHub */,
 				118FD6302020695200E17DEA /* MainViewController.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		116286C520200037007E12F4 /* GitHub */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GitHub;
 			sourceTree = "<group>";
 		};
 		116286C620200042007E12F4 /* Data Store */ = {
@@ -234,7 +277,7 @@
 				116286CC2020076B007E12F4 /* Interactor */,
 				116286CD20200781007E12F4 /* Presenter */,
 				116286CF202007AF007E12F4 /* Router */,
-				118FD63C20206EA900E17DEA /* RepositoriesProtocol.swift */,
+				1107F2AE202093AC000E7579 /* Helpers */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -246,6 +289,7 @@
 				116286D320200801007E12F4 /* Interactor */,
 				116286D2202007FD007E12F4 /* Presenter */,
 				116286D0202007F4007E12F4 /* Router */,
+				1107F2AF202093D0000E7579 /* Helpers */,
 			);
 			path = "Repository Details";
 			sourceTree = "<group>";
@@ -261,6 +305,7 @@
 		116286CC2020076B007E12F4 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				1107F2B02020941F000E7579 /* RepositoriesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -268,6 +313,7 @@
 		116286CD20200781007E12F4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1107F2B820209607000E7579 /* RepositoriesPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -311,6 +357,8 @@
 		118FD6402020700300E17DEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				114074042020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift */,
+				114074052020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift */,
 				1107F28920208331000E7579 /* License+CoreDataClass.swift */,
 				1107F28A20208331000E7579 /* License+CoreDataProperties.swift */,
 				1107F28B20208331000E7579 /* Repository+CoreDataClass.swift */,
@@ -668,16 +716,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1107F2B5202094BB000E7579 /* RepositoriesDataManager.swift in Sources */,
+				1107F2A3202088F9000E7579 /* LicenseEntity.swift in Sources */,
+				1107F2AB20208926000E7579 /* OwnerEntity.swift in Sources */,
 				118FD63520206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
-				118FD63D20206EA900E17DEA /* RepositoriesProtocol.swift in Sources */,
+				114074092020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift in Sources */,
+				1107F2B920209607000E7579 /* RepositoriesPresenter.swift in Sources */,
+				118FD63D20206EA900E17DEA /* RepositoriesDelegate.swift in Sources */,
 				1107F29220208331000E7579 /* License+CoreDataProperties.swift in Sources */,
 				1107F29E20208331000E7579 /* Owner+CoreDataProperties.swift in Sources */,
 				118FD63920206D4A00E17DEA /* RepositoriesRouter.swift in Sources */,
 				118FD6312020695200E17DEA /* MainViewController.swift in Sources */,
 				11506F42201F7664006300F9 /* Gnoll.xcdatamodeld in Sources */,
+				1107F2A720208917000E7579 /* RepositoryEntity.swift in Sources */,
+				1107F2B12020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				1107F28F20208331000E7579 /* License+CoreDataClass.swift in Sources */,
 				1107F29820208331000E7579 /* Repository+CoreDataProperties.swift in Sources */,
 				11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */,
+				114074062020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift in Sources */,
 				1107F29520208331000E7579 /* Repository+CoreDataClass.swift in Sources */,
 				1107F29B20208331000E7579 /* Owner+CoreDataClass.swift in Sources */,
 			);
@@ -687,16 +743,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1107F2B6202094BB000E7579 /* RepositoriesDataManager.swift in Sources */,
+				1107F2A4202088F9000E7579 /* LicenseEntity.swift in Sources */,
+				1107F2AC20208926000E7579 /* OwnerEntity.swift in Sources */,
 				118FD6432020811A00E17DEA /* Gnoll.xcdatamodeld in Sources */,
+				1140740A2020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift in Sources */,
+				1107F2BA20209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				118FD63A20206D4A00E17DEA /* RepositoriesRouter.swift in Sources */,
 				1107F29320208331000E7579 /* License+CoreDataProperties.swift in Sources */,
 				1107F29F20208331000E7579 /* Owner+CoreDataProperties.swift in Sources */,
 				11506F52201F7664006300F9 /* GnollTests.swift in Sources */,
 				118FD63620206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
-				118FD63E20206EA900E17DEA /* RepositoriesProtocol.swift in Sources */,
+				118FD63E20206EA900E17DEA /* RepositoriesDelegate.swift in Sources */,
+				1107F2A820208917000E7579 /* RepositoryEntity.swift in Sources */,
+				1107F2B22020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				1107F29020208331000E7579 /* License+CoreDataClass.swift in Sources */,
 				1107F29920208331000E7579 /* Repository+CoreDataProperties.swift in Sources */,
 				118FD6322020695200E17DEA /* MainViewController.swift in Sources */,
+				114074072020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift in Sources */,
 				1107F29620208331000E7579 /* Repository+CoreDataClass.swift in Sources */,
 				1107F29C20208331000E7579 /* Owner+CoreDataClass.swift in Sources */,
 			);
@@ -706,16 +770,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1107F2B7202094BB000E7579 /* RepositoriesDataManager.swift in Sources */,
+				1107F2A5202088F9000E7579 /* LicenseEntity.swift in Sources */,
+				1107F2AD20208926000E7579 /* OwnerEntity.swift in Sources */,
 				118FD6442020811B00E17DEA /* Gnoll.xcdatamodeld in Sources */,
+				1140740B2020A3B100EC0646 /* RepositoryQuery+CoreDataProperties.swift in Sources */,
+				1107F2BB20209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				118FD63B20206D4A00E17DEA /* RepositoriesRouter.swift in Sources */,
 				1107F29420208331000E7579 /* License+CoreDataProperties.swift in Sources */,
 				1107F2A020208331000E7579 /* Owner+CoreDataProperties.swift in Sources */,
 				11506F5D201F7664006300F9 /* GnollUITests.swift in Sources */,
 				118FD63720206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
-				118FD63F20206EA900E17DEA /* RepositoriesProtocol.swift in Sources */,
+				118FD63F20206EA900E17DEA /* RepositoriesDelegate.swift in Sources */,
+				1107F2A920208917000E7579 /* RepositoryEntity.swift in Sources */,
+				1107F2B32020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				1107F29120208331000E7579 /* License+CoreDataClass.swift in Sources */,
 				1107F29A20208331000E7579 /* Repository+CoreDataProperties.swift in Sources */,
 				118FD6332020695200E17DEA /* MainViewController.swift in Sources */,
+				114074082020A3B100EC0646 /* RepositoryQuery+CoreDataClass.swift in Sources */,
 				1107F29720208331000E7579 /* Repository+CoreDataClass.swift in Sources */,
 				1107F29D20208331000E7579 /* Owner+CoreDataClass.swift in Sources */,
 			);
