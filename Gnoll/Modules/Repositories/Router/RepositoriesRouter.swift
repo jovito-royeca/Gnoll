@@ -8,6 +8,25 @@
 
 import UIKit
 
-class RepositoriesRouter: NSObject {
-
+class RepositoriesRouter: RepositoriesRouterProtocol {
+    class func initRepositoriesModule(withView view: RepositoriesViewController) {
+        let presenter: RepositoriesPresenterProtocol & RepositoriesInteractorOutputProtocol = RepositoriesPresenter()
+        let interactor: RepositoriesInteractorInputProtocol & RepositoriesRemoteDataManagerOutputProtocol = RepositoriesInteractor()
+        let localDataManager: RepositoriesLocalDataManagerInputProtocol = RepositoriesLocalDataManager()
+        let remoteDataManager: RepositoriesRemoteDataManagerInputProtocol = RepositoriesRemoteDataManager()
+        let router: RepositoriesRouterProtocol = RepositoriesRouter()
+        
+        view.presenter = presenter
+        presenter.view = view
+        presenter.router = router
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        interactor.localDataManager = localDataManager
+        interactor.remoteDataManager = remoteDataManager
+        remoteDataManager.remoteRequestHandler = interactor
+    }
+    
+    func presentRepositoryDetailsScreen(from view: RepositoriesViewProtocol, forRepository repository: RepositoryEntity) {
+        
+    }
 }

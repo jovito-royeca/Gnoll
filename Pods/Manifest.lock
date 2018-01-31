@@ -2,23 +2,31 @@ PODS:
   - Alamofire (4.6.0)
   - DATASource (7.0.1)
   - DATAStack (8.0.1)
+  - Font-Awesome-Swift (1.7.2)
   - ObjectMapper (3.1.0)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
   - Sync (4.0.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - DATASource
   - DATAStack
+  - Font-Awesome-Swift
   - ObjectMapper (~> 3.1)
+  - SDWebImage (~> 4.0)
   - Sync
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   DATASource: 8cc3060d145b8b1855859f92fbff52b1b1930c7e
   DATAStack: 743c6f0f06a8141c2d42b31f293ba3a056a7d4ba
+  Font-Awesome-Swift: 83ab9db365379ee6025167cec67bdc5d3226a811
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
   Sync: 0490b72e3322ba86095f603d7230bec36749f249
 
-PODFILE CHECKSUM: 9689f6ea9205e7d00106bcb0e480c307a4243413
+PODFILE CHECKSUM: ef5f378dafea7d6ce3e47fbd12b5128c1d51de30
 
 COCOAPODS: 1.4.0.beta.2

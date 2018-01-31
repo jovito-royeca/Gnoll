@@ -2,7 +2,7 @@
 //  Owner+CoreDataProperties.swift
 //  Gnoll
 //
-//  Created by Jovito Royeca on 30/01/2018.
+//  Created by Jovito Royeca on 31/01/2018.
 //  Copyright © 2018 Jovito Royeca. All rights reserved.
 //
 //
@@ -26,12 +26,12 @@ extension Owner {
     @NSManaged public var id: Int64
     @NSManaged public var login: String?
     @NSManaged public var organizationsUrl: String?
+    @NSManaged public var ownerType: String?
     @NSManaged public var receivedEventsUrl: String?
     @NSManaged public var reposUrl: String?
     @NSManaged public var siteAdmin: Bool
     @NSManaged public var starredUrl: String?
     @NSManaged public var subscriptionsUrl: String?
-    @NSManaged public var ownerType: String?
     @NSManaged public var url: String?
     @NSManaged public var repositories: NSSet?
 

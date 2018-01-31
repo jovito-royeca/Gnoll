@@ -116,7 +116,7 @@
         <relationship name="license" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="License" inverseName="repositories" inverseEntity="License" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="repositories" inverseEntity="Owner" syncable="YES"/>
     </entity>
-    <entity name="RepositoryQuery" representedClassName="RepositoryQuery" syncable="YES" codeGenerationType="class">
+    <entity name="RepositoryQuery" representedClassName="RepositoryQuery" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="incompleteResults" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="query" optional="YES" attributeType="String" syncable="YES">

@@ -7,6 +7,8 @@ target 'Gnoll' do
     pod 'Sync'#, '~> 2'
     pod 'DATASource'#, '~> 5.8'
     pod 'DATAStack'#, '~> 6'
+    pod 'Font-Awesome-Swift'#, :git => 'https://github.com/Vaberer/Font-Awesome-Swift', :branch => 'swift-3'
+    pod 'SDWebImage', '~> 4.0'
 end
 
 target 'GnollTests' do
@@ -15,6 +17,8 @@ target 'GnollTests' do
     pod 'Sync'#, '~> 2'
     pod 'DATASource'#, '~> 5.8'
     pod 'DATAStack'#, '~> 6'
+    pod 'Font-Awesome-Swift'#, :git => 'https://github.com/Vaberer/Font-Awesome-Swift', :branch => 'swift-3'
+    pod 'SDWebImage', '~> 4.0'
 end
 
 target 'GnollUITests' do
@@ -23,5 +27,7 @@ target 'GnollUITests' do
     pod 'Sync'#, '~> 2'
     pod 'DATASource'#, '~> 5.8'
     pod 'DATAStack'#, '~> 6'
+    pod 'Font-Awesome-Swift'#, :git => 'https://github.com/Vaberer/Font-Awesome-Swift', :branch => 'swift-3'
+    pod 'SDWebImage', '~> 4.0'
 end
 

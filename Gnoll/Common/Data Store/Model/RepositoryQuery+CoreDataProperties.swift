@@ -2,7 +2,7 @@
 //  RepositoryQuery+CoreDataProperties.swift
 //  Gnoll
 //
-//  Created by Jovito Royeca on 30/01/2018.
+//  Created by Jovito Royeca on 31/01/2018.
 //  Copyright © 2018 Jovito Royeca. All rights reserved.
 //
 //
@@ -19,8 +19,8 @@ extension RepositoryQuery {
 
     @NSManaged public var date: NSDate?
     @NSManaged public var incompleteResults: Bool
-    @NSManaged public var totalCount: Int64
     @NSManaged public var query: String?
+    @NSManaged public var totalCount: Int64
     @NSManaged public var items: NSSet?
 
 }

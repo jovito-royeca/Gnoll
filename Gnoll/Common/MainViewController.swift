@@ -17,8 +17,8 @@ class MainViewController: UITabBarController {
         for vc in childViewControllers {
             if let nav = vc as? UINavigationController {
                 for nvc in nav.childViewControllers {
-                    if let reposVC = nvc as? RepositoriesViewController {
-                        
+                    if let vc = nvc as? RepositoriesViewController {
+                        let _ = RepositoriesRouter.initRepositoriesModule(withView: vc)
                     }
                 }
             }

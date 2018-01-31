@@ -2,7 +2,7 @@
 //  Repository+CoreDataProperties.swift
 //  Gnoll
 //
-//  Created by Jovito Royeca on 30/01/2018.
+//  Created by Jovito Royeca on 31/01/2018.
 //  Copyright © 2018 Jovito Royeca. All rights reserved.
 //
 //
@@ -32,7 +32,6 @@ extension Repository {
     @NSManaged public var createdAt: NSDate?
     @NSManaged public var defaultBranch: String?
     @NSManaged public var deploymentsUrl: String?
-    @NSManaged public var repositoryDescription: String?
     @NSManaged public var downloadsUrl: String?
     @NSManaged public var eventsUrl: String?
     @NSManaged public var fork: Bool
@@ -67,10 +66,11 @@ extension Repository {
     @NSManaged public var notificationsUrl: String?
     @NSManaged public var openIssues: Int32
     @NSManaged public var openIssuesCount: Int32
-    @NSManaged public var repositoryPrivate: Bool
     @NSManaged public var pullsUrl: String?
     @NSManaged public var pushedAt: NSDate?
     @NSManaged public var releasesUrl: String?
+    @NSManaged public var repositoryDescription: String?
+    @NSManaged public var repositoryPrivate: Bool
     @NSManaged public var score: Double
     @NSManaged public var size: Int64
     @NSManaged public var sshUrl: String?
@@ -87,25 +87,25 @@ extension Repository {
     @NSManaged public var url: String?
     @NSManaged public var watchers: Int32
     @NSManaged public var watchersCount: Int32
+    @NSManaged public var items: NSSet?
     @NSManaged public var license: License?
     @NSManaged public var owner: Owner?
-    @NSManaged public var items: NSSet?
-    
+
 }
 
 // MARK: Generated accessors for items
-extension RepositoryQuery {
-    
+extension Repository {
+
     @objc(addItemsObject:)
     @NSManaged public func addToItems(_ value: RepositoryQuery)
-    
+
     @objc(removeItemsObject:)
     @NSManaged public func removeFromItems(_ value: RepositoryQuery)
-    
+
     @objc(addItems:)
     @NSManaged public func addToItems(_ values: NSSet)
-    
+
     @objc(removeItems:)
     @NSManaged public func removeFromItems(_ values: NSSet)
-    
+
 }

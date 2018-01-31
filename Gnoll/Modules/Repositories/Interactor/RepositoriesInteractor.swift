@@ -7,49 +7,67 @@
 //
 
 import UIKit
+import Sync
 
-class RepositoriesInteractor: RepositoriesInteractorInputDelegate {
-    weak var presenter: RepositoriesInteractorOutputDelegate?
-    var datamanager: RepositoriesDataManagerProtocol?
+class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
+    weak var presenter: RepositoriesInteractorOutputProtocol?
+    var localDataManager: RepositoriesLocalDataManagerInputProtocol?
+    var remoteDataManager: RepositoriesRemoteDataManagerInputProtocol?
+    var query: String?
     
     func retrieveRepositories(withQuery query: String) {
-//        do {
-//            if let repoList = try datamanager?.retrieveRepositories(withQuery: query) {
-//                let repoEntityList = repoList.map() {
-//                    return PostModel(id: Int($0.id), title: $0.title!, imageUrl: $0.imageUrl!, thumbImageUrl: $0.thumbImageUrl!)
-//                }
-//                if  postModelList.isEmpty {
-//                    remoteDatamanager?.retrievePostList()
-//                }else{
-//                    presenter?.didRetrievePosts(postModelList)
-//                }
-//            } else {
-//                remoteDatamanager?.retrievePostList()
-//            }
-//
-//        } catch {
-//            presenter?.didRetrievePosts([])
-//        }
+        self.query = query
+        var entities = [RepositoryEntity]()
+        
+        do {
+            if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
+                for repo in repositories {
+                    if let entity = RepositoryEntity(JSON: repo.export()) {
+                        entities.append(entity)
+                    }
+                }
+                
+                if  entities.isEmpty {
+                    remoteDataManager?.retrieveRepositories(withQuery: query)
+                } else {
+                    presenter?.didRetrieveRepositories(entities)
+                }
+            } else {
+                remoteDataManager?.retrieveRepositories(withQuery: query)
+            }
+            
+        } catch {
+            presenter?.didRetrieveRepositories(entities)
+        }
     }
-    
 }
 
-extension RepositoriesInteractor: PostListRemoteDataManagerOutputProtocol {
-    
-    func onPostsRetrieved(_ posts: [PostModel]) {
-        presenter?.didRetrievePosts(posts)
+extension RepositoriesInteractor: RepositoriesRemoteDataManagerOutputProtocol {
+    func onRepositoriesRetrieved(_ json: [String: Any]) {
+        localDataManager?.saveRepositoryQuery(json: json)
         
-        for postModel in posts {
+        if let query = query {
+            var entities = [RepositoryEntity]()
+            
             do {
-                try localDatamanager?.savePost(id: postModel.id, title: postModel.title, imageUrl: postModel.imageUrl, thumbImageUrl: postModel.thumbImageUrl)
-            } catch  {
+                if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
+                    for repo in repositories {
+                        if let entity = RepositoryEntity(JSON: repo.export()) {
+                            entities.append(entity)
+                        }
+                    }
+                    
+                    presenter?.didRetrieveRepositories(entities)
+                }
                 
+            } catch {
+                presenter?.didRetrieveRepositories(entities)
             }
         }
     }
     
-    func onError() {
-        presenter?.onError()
+    func onError(_ error: Error) {
+        presenter?.onError(error)
     }
     
 }

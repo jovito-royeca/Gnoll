@@ -16,12 +16,12 @@ class OwnerEntity: Mappable {
     var followingUrl: String?
     var gistsUrl: String?
     var htmlUrl: String?
-    var id: Int64
+    var id: Int64 = 0
     var login: String?
     var organizationsUrl: String?
     var receivedEventsUrl: String?
     var reposUrl: String?
-    var siteAdmin: Bool
+    var siteAdmin = false
     var starredUrl: String?
     var subscriptionsUrl: String?
     var ownerType: String?

@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 class RepositoryEntity: Mappable {
-    var archived: Bool
+    var archived = false
     var archiveUrl: String?
     var assigneesUrl: String?
     var blobsUrl: String?
@@ -25,12 +25,12 @@ class RepositoryEntity: Mappable {
     var createdAt: NSDate?
     var defaultBranch: String?
     var deploymentsUrl: String?
-    var description_: String?
+    var repositoryDescription: String?
     var downloadsUrl: String?
     var eventsUrl: String?
-    var fork: Bool
-    var forkCount: Int32
-    var forks: Int32
+    var fork = false
+    var forkCount = 0
+    var forks = 0
     var forksUrl: String?
     var fullName: String?
     var gitCommitsUrl: String?
@@ -38,14 +38,14 @@ class RepositoryEntity: Mappable {
     var gitTagsUrl: String?
     var gitUrl: String?
     var hasDownloads: String?
-    var hasIssues: Bool
-    var hasPages: Bool
+    var hasIssues = false
+    var hasPages = false
     var hasProjects: String?
-    var hasWiki: Bool
+    var hasWiki = false
     var homepage: String?
     var hooksUrl: String?
     var htmlUrl: String?
-    var id: Int64
+    var id = 0
     var issueCommentUrl: String?
     var issueEventsUrl: String?
     var issuesUrl: String?
@@ -58,16 +58,16 @@ class RepositoryEntity: Mappable {
     var mirrorUrl: String?
     var name: String?
     var notificationsUrl: String?
-    var openIssues: Int32
-    var openIssuesCount: Int32
-    var repositoryPrivate: Bool
+    var openIssues = 0
+    var openIssuesCount = 0
+    var repositoryPrivate = false
     var pullsUrl: String?
     var pushedAt: NSDate?
     var releasesUrl: String?
-    var score: Double
-    var size: Int64
+    var score = Double(0)
+    var size = 0
     var sshUrl: String?
-    var stargazersCount: Int32
+    var stargazersCount = 0
     var stargazersUrl: String?
     var statusesUrl: String?
     var subscribersUrl: String?
@@ -78,8 +78,8 @@ class RepositoryEntity: Mappable {
     var treesUrl: String?
     var updatedAt: NSDate?
     var url: String?
-    var watchers: Int32
-    var watchersCount: Int32
+    var watchers = 0
+    var watchersCount = 0
     var license: LicenseEntity?
     var owner: OwnerEntity?
     
@@ -89,12 +89,6 @@ class RepositoryEntity: Mappable {
     
     // Mappable
     func mapping(map: Map) {
-        key <- map["key"]
-        name <- map["name"]
-        spdxId <- map["spdx_id"]
-        url <- map["url"]
-        repositories <- map["repositories"]
-        
         archived <- map["archived"]
         archiveUrl <- map["archive_url"]
         assigneesUrl <- map["assignees_url"]

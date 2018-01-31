@@ -8,32 +8,31 @@
 
 import UIKit
 
-class RepositoriesPresenter: RepositoriesPresenterDelegate {
-    weak var view: RepositoriesViewDelegate?
-    var interactor: RepositoriesInteractorInputDelegate?
-    var router: RepositoriesRouterDelegate?
+class RepositoriesPresenter: RepositoriesPresenterProtocol {
+    weak var view: RepositoriesViewProtocol?
+    var interactor: RepositoriesInteractorInputProtocol?
+    var router: RepositoriesRouterProtocol?
     
     func viewDidLoad() {
         view?.showLoading()
-        interactor?.retrievePostList()
+        interactor?.retrieveRepositories(withQuery: "managuide")
     }
     
     func showRepositoryDetails(forRepository repository: RepositoryEntity) {
         router?.presentRepositoryDetailsScreen(from: view!, forRepository: repository)
     }
-    
 }
 
-extension RepositoriesPresenter: RepositoriesInteractorOutputDelegate {
+extension RepositoriesPresenter: RepositoriesInteractorOutputProtocol {
     
     func didRetrieveRepositories(_ repositories: [RepositoryEntity]) {
         view?.hideLoading()
         view?.showRepositories(with: repositories)
     }
     
-    func onError() {
+    func onError(_ error: Error) {
         view?.hideLoading()
-        view?.showError()
+        view?.showError(error)
     }
     
 }
