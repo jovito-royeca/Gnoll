@@ -21,7 +21,6 @@ class RepositoriesRemoteDataManager: RepositoriesRemoteDataManagerInputProtocol 
                  .responseJSON { response in
                     switch response.result {
                     case .success(let json):
-                        print(json)
                         self.remoteRequestHandler?.onRepositoriesRetrieved(json as! [String: Any])
                     case .failure(let error):
                         self.remoteRequestHandler?.onError(error)

@@ -103,6 +103,7 @@
 		1107F2B02020941F000E7579 /* RepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesInteractor.swift; sourceTree = "<group>"; };
 		1107F2B4202094BB000E7579 /* RepositoriesRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRemoteDataManager.swift; sourceTree = "<group>"; };
 		1107F2B820209607000E7579 /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
+		112AFDD220214A1200D9DA1E /* Gnoll 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gnoll 2.xcdatamodel"; sourceTree = "<group>"; };
 		1132378E2020DE290023ADB6 /* Repository+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1132378F2020DE290023ADB6 /* Repository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		113237902020DE290023ADB6 /* License+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "License+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -1096,9 +1097,10 @@
 		11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				112AFDD220214A1200D9DA1E /* Gnoll 2.xcdatamodel */,
 				11506F41201F7664006300F9 /* Gnoll.xcdatamodel */,
 			);
-			currentVersion = 11506F41201F7664006300F9 /* Gnoll.xcdatamodel */;
+			currentVersion = 112AFDD220214A1200D9DA1E /* Gnoll 2.xcdatamodel */;
 			path = Gnoll.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

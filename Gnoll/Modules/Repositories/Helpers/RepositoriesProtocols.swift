@@ -43,6 +43,7 @@ protocol RepositoriesPresenterProtocol: class {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
+    func retrieveRepositories(withQuery query: String)
     func showRepositoryDetails(forRepository repository: RepositoryEntity)
 }
 

@@ -45,7 +45,7 @@
         <!--Repositories View Controller-->
         <scene sceneID="Gkw-YN-Is6">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MvL-nE-2wQ" customClass="RepositoriesViewController" customModule="Gnoll" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RepositoriesViewController" automaticallyAdjustsScrollViewInsets="NO" id="MvL-nE-2wQ" customClass="RepositoriesViewController" customModule="Gnoll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h6l-9X-cJC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,7 +15,10 @@ class RepositoriesPresenter: RepositoriesPresenterProtocol {
     
     func viewDidLoad() {
         view?.showLoading()
-        interactor?.retrieveRepositories(withQuery: "managuide")
+    }
+    
+    func retrieveRepositories(withQuery query: String) {
+        interactor?.retrieveRepositories(withQuery: query)
     }
     
     func showRepositoryDetails(forRepository repository: RepositoryEntity) {

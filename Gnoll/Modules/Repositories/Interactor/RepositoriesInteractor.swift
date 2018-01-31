@@ -52,7 +52,17 @@ extension RepositoriesInteractor: RepositoriesRemoteDataManagerOutputProtocol {
             do {
                 if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
                     for repo in repositories {
-                        if let entity = RepositoryEntity(JSON: repo.export()) {
+//                        let json = repo.export()
+                        var json = [String: Any]()
+                        json["id"] = repo.id
+                        if let x = repo.repositoryDescription {
+                            json["description"] = x
+                        }
+                        if let x = repo.name {
+                            json["name"] = x
+                        }
+                        
+                        if let entity = RepositoryEntity(JSON: json) {
                             entities.append(entity)
                         }
                     }

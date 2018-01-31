@@ -11,6 +11,7 @@ import UIKit
 class RepositoriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var searchController: UISearchController?
     var presenter: RepositoriesPresenterProtocol?
     var repositories = [RepositoryEntity]()
     
@@ -19,6 +20,14 @@ class RepositoriesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        searchController = UISearchController(searchResultsController: nil)
+        searchController!.searchResultsUpdater = self
+        searchController!.searchBar.placeholder = "Search"
+        searchController!.searchBar.sizeToFit()
+        searchController!.obscuresBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        navigationItem.searchController = searchController
+        
         presenter?.viewDidLoad()
     }
 
@@ -45,6 +54,10 @@ extension RepositoriesViewController: RepositoriesViewProtocol {
     func hideLoading() {
         print("hideLoading()")
     }
+    
+    @objc func retrieveRepositories(withQuery query: String) {
+        presenter?.retrieveRepositories(withQuery: query)
+    }
 }
 
 extension RepositoriesViewController: UITableViewDataSource {
@@ -69,5 +82,11 @@ extension RepositoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showRepositoryDetails(forRepository: repositories[indexPath.row])
     }
-    
+}
+
+extension RepositoriesViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(retrieveRepositories(withQuery:)), object: nil)
+        self.perform(#selector(retrieveRepositories(withQuery:)), with: searchController.searchBar.text, afterDelay: 0.5)
+    }
 }

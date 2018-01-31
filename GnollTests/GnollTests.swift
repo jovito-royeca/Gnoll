@@ -33,4 +33,27 @@ class GnollTests: XCTestCase {
         }
     }
     
+    func testRemote() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RepositoriesViewController")
+        if let rvc = vc as? RepositoriesViewController {
+            let _ = RepositoriesRouter.initRepositoriesModule(withView: rvc)
+            rvc.retrieveRepositories(withQuery: "managuide")
+        }
+    }
+    
+    func testRemote2() {
+        let interactor: RepositoriesInteractorInputProtocol & RepositoriesRemoteDataManagerOutputProtocol = RepositoriesInteractor()
+        let localDataManager: RepositoriesLocalDataManagerInputProtocol = RepositoriesLocalDataManager()
+        let remoteDataManager: RepositoriesRemoteDataManagerInputProtocol = RepositoriesRemoteDataManager()
+        
+        interactor.localDataManager = localDataManager
+        interactor.remoteDataManager = remoteDataManager
+        remoteDataManager.remoteRequestHandler = interactor
+        
+        let expectation = XCTestExpectation(description: "Download apple.com home page")
+        interactor.retrieveRepositories(withQuery: "managuide")
+        expectation.fulfill()
+        wait(for: [expectation], timeout: 10.0)
+    }
 }

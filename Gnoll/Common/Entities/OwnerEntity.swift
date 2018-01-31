@@ -24,7 +24,7 @@ class OwnerEntity: Mappable {
     var siteAdmin = false
     var starredUrl: String?
     var subscriptionsUrl: String?
-    var ownerType: String?
+    var type: String?
     var url: String?
     var repositories: [RepositoryEntity]?
     
@@ -48,7 +48,7 @@ class OwnerEntity: Mappable {
         siteAdmin <- map["site_admin"]
         starredUrl <- map["starred_url"]
         subscriptionsUrl <- map["subscriptions_url"]
-        ownerType <- map["type"]
+        type <- map["type_"]
         url <- map["url"]
         repositories <- map["repositoriex"]
     }
