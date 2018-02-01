@@ -121,6 +121,8 @@
 		11C347ED202369DE000768E8 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C347D1202369DE000768E8 /* Owner+CoreDataProperties.swift */; };
 		11C347EE202369DE000768E8 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C347D1202369DE000768E8 /* Owner+CoreDataProperties.swift */; };
 		11C347EF202369DE000768E8 /* Owner+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C347D1202369DE000768E8 /* Owner+CoreDataProperties.swift */; };
+		11C347F020237CC0000768E8 /* MyRepositoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6A20234B84005511CF /* MyRepositoriesProtocols.swift */; };
+		11C347F120237CC6000768E8 /* MyRepositoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6A20234B84005511CF /* MyRepositoriesProtocols.swift */; };
 		11C45A6B20234B85005511CF /* MyRepositoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6A20234B84005511CF /* MyRepositoriesProtocols.swift */; };
 		11C45A6D20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */; };
 		11C45A6E20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */; };
@@ -980,6 +982,7 @@
 				11C347EB202369DE000768E8 /* Owner+CoreDataClass.swift in Sources */,
 				112AFDF12022E4E800D9DA1E /* RepositoryDetailRemoteDataManager.swift in Sources */,
 				118FD63620206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
+				11C347F020237CC0000768E8 /* MyRepositoriesProtocols.swift in Sources */,
 				112AFDE92022DF3E00D9DA1E /* RepositoryDetailPresenter.swift in Sources */,
 				11C45A7E2023535A005511CF /* DataMapper.swift in Sources */,
 				118FD63E20206EA900E17DEA /* RepositoriesProtocols.swift in Sources */,
@@ -1029,6 +1032,7 @@
 				11C347EC202369DE000768E8 /* Owner+CoreDataClass.swift in Sources */,
 				112AFDF22022E4E800D9DA1E /* RepositoryDetailRemoteDataManager.swift in Sources */,
 				118FD63720206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
+				11C347F120237CC6000768E8 /* MyRepositoriesProtocols.swift in Sources */,
 				112AFDEA2022DF3E00D9DA1E /* RepositoryDetailPresenter.swift in Sources */,
 				11C45A7F2023535A005511CF /* DataMapper.swift in Sources */,
 				118FD63F20206EA900E17DEA /* RepositoriesProtocols.swift in Sources */,

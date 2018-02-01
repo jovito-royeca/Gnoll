@@ -33,16 +33,7 @@ class GnollTests: XCTestCase {
         }
     }
     
-    func testRemote() {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let vc = storyboard.instantiateViewController(withIdentifier: "RepositoriesViewController")
-        if let rvc = vc as? RepositoriesViewController {
-            let _ = RepositoriesRouter.initRepositoriesModule(withView: rvc)
-            rvc.retrieveRepositories(withQuery: "managuide")
-        }
-    }
-    
-    func testRemote2() {
+    func testRetrieveRepositories() {
         let interactor: RepositoriesInteractorInputProtocol & RepositoriesRemoteDataManagerOutputProtocol = RepositoriesInteractor()
         let localDataManager: RepositoriesLocalDataManagerInputProtocol = RepositoriesLocalDataManager()
         let remoteDataManager: RepositoriesRemoteDataManagerInputProtocol = RepositoriesRemoteDataManager()
@@ -51,8 +42,23 @@ class GnollTests: XCTestCase {
         interactor.remoteDataManager = remoteDataManager
         remoteDataManager.remoteRequestHandler = interactor
         
-        let expectation = XCTestExpectation(description: "Download apple.com home page")
-        interactor.retrieveRepositories(withQuery: "managuide")
+        let expectation = XCTestExpectation(description: "testRetrieveRepositories()")
+        interactor.retrieveRepositories(withQuery: "B")
+        expectation.fulfill()
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func testRetrieveMyRepositories() {
+        let interactor: MyRepositoriesInteractorInputProtocol & MyRepositoriesRemoteDataManagerOutputProtocol = MyRepositoriesInteractor()
+        let localDataManager: MyRepositoriesLocalDataManagerInputProtocol = MyRepositoriesLocalDataManager()
+        let remoteDataManager: MyRepositoriesRemoteDataManagerInputProtocol = MyRepositoriesRemoteDataManager()
+        
+        interactor.localDataManager = localDataManager
+        interactor.remoteDataManager = remoteDataManager
+        remoteDataManager.remoteRequestHandler = interactor
+        
+        let expectation = XCTestExpectation(description: "testRetrieveMyRepositories()")
+        interactor.retrieveRepositories(withQuery: nil)
         expectation.fulfill()
         wait(for: [expectation], timeout: 10.0)
     }

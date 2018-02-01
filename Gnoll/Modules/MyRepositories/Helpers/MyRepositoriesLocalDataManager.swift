@@ -19,7 +19,9 @@ class MyRepositoriesLocalDataManager: MyRepositoriesLocalDataManagerInputProtoco
             repos = rq.items?.allObjects as! [Repository]
 
             if let query = query {
-                repos = repos.filter{ $0.name!.contains(query) }
+                if query.count > 0 {
+                    repos = repos.filter{ $0.name!.contains(query) }
+                }
             }
         }
         repos = repos.sorted(by: { (first: Repository, second: Repository) -> Bool in
