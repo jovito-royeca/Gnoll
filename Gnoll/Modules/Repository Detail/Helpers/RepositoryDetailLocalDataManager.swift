@@ -21,11 +21,15 @@ class RepositoryDetailLocalDataManager: RepositoryDetailLocalDataManagerInputPro
     func save(repository: RepositoryEntity, json: [[String : Any]], completion: @escaping () -> Void) {
         let dataStack = DataStack(modelName: "Gnoll")
         
-        dataStack.sync(json, inEntityNamed: "Repository", operations: Sync.OperationOptions.insert) { error in
+        dataStack.sync(json, inEntityNamed: "Repository"/*, operations: Sync.OperationOptions.insert*/) { error in
             let request: NSFetchRequest<Repository> = NSFetchRequest(entityName: "Repository")
             request.predicate = NSPredicate(format: "id == %d", repository.id)
             
             if let r = try! dataStack.mainContext.fetch(request).first {
+                // delete previous forks
+                // ...
+                
+                // add the new forks
                 var arrayIDs = [Int]()
                 for dict in json {
                     if let id = dict["id"] as? Int {

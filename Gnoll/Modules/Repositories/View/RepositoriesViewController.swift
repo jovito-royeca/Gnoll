@@ -10,12 +10,14 @@ import UIKit
 import MBProgressHUD
 
 class RepositoriesViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
+    // MARK: Variables
     var searchController: UISearchController?
     var presenter: RepositoriesPresenterProtocol?
     var repositories = [RepositoryEntity]()
     var message:String?
+    
+    // MARK: Outlets
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: Overrides
     override func viewDidLoad() {
@@ -85,11 +87,13 @@ extension RepositoriesViewController: UITableViewDataSource {
             if let c = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as? RepositoryTableViewCell {
                 let repository = repositories[indexPath.row]
                 c.show(repository: repository)
+                c.selectionStyle = .default
                 cell = c
             }
         } else {
             if let c = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as? MessageTableViewCell {
                 c.messageLabel.text = message
+                c.selectionStyle = .none
                 cell = c
             }
         }
@@ -106,7 +110,9 @@ extension RepositoriesViewController: UITableViewDataSource {
 // MARK: UITableViewDelegate
 extension RepositoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.showRepositoryDetails(forRepository: repositories[indexPath.row])
+        if repositories.count > 0 {
+            presenter?.showRepositoryDetails(forRepository: repositories[indexPath.row])
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
