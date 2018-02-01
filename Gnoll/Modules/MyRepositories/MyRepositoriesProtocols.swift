@@ -53,8 +53,6 @@ protocol MyRepositoriesRouterProtocol: class {
     // PRESENTER -> ROUTER
     func presentRepositoryDetailsScreen(from view: MyRepositoriesViewProtocol, forRepository repository: RepositoryEntity)
     func presentLoginScreen(from view: MyRepositoriesViewProtocol)
-    func getGithubAccessToken() -> String?
-    func setGithubAccessToken(token: String)
 }
 
 // MARK: Helpers
@@ -62,17 +60,17 @@ protocol MyRepositoriesRemoteDataManagerInputProtocol: class {
     var remoteRequestHandler: MyRepositoriesRemoteDataManagerOutputProtocol? { get set }
     
     // INTERACTOR -> REMOTEDATAMANAGER
-    func retrieveRepositories(withQuery query: String)
+    func retrieveRepositories()
 }
 
 protocol MyRepositoriesRemoteDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
-    func onRepositoriesRetrieved(_ json: [String: Any])
+    func onRepositoriesRetrieved(_ json: [[String: Any]])
     func onError(_ error: Error)
 }
 
 protocol MyRepositoriesLocalDataManagerInputProtocol: class {
     // INTERACTOR -> LOCALDATAMANAGER
-    func retrieveRepositories(withQuery query: String) -> [Repository]
-    func saveRepositoryQuery(withQuery query: String, json: [String: Any], completion: @escaping () -> Void)
+    func retrieveRepositories(withQuery query: String?) -> [Repository]
+    func saveRepository(json: [[String: Any]], completion: @escaping () -> Void)
 }

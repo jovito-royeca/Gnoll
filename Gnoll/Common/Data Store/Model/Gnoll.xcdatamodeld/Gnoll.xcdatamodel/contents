@@ -12,6 +12,21 @@
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="license" inverseEntity="Repository" syncable="YES"/>
     </entity>
+    <entity name="MyRepositoryQuery" representedClassName="MyRepositoryQuery" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="hyper.isPrimaryKey" value="true"/>
+                <entry key="sync.isPrimaryKey" value="true"/>
+            </userInfo>
+        </attribute>
+        <attribute name="incompleteResults" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="myRepositoryQuery" inverseEntity="Repository" syncable="YES"/>
+        <userInfo>
+            <entry key="hyper.isPrimaryKey" value="true"/>
+            <entry key="sync.isPrimaryKey" value="true"/>
+        </userInfo>
+    </entity>
     <entity name="Owner" representedClassName="Owner" syncable="YES">
         <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventsURL" optional="YES" attributeType="String" syncable="YES"/>
@@ -118,6 +133,7 @@
         <attribute name="watchersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="forkItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="forkItems" inverseEntity="Repository" syncable="YES"/>
         <relationship name="license" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="License" inverseName="repositories" inverseEntity="License" syncable="YES"/>
+        <relationship name="myRepositoryQuery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MyRepositoryQuery" inverseName="items" inverseEntity="MyRepositoryQuery" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="repositories" inverseEntity="Owner" syncable="YES"/>
         <relationship name="repositoryQuery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RepositoryQuery" inverseName="items" inverseEntity="RepositoryQuery" syncable="YES"/>
     </entity>
@@ -140,7 +156,8 @@
     <elements>
         <element name="License" positionX="-54" positionY="144" width="128" height="120"/>
         <element name="Owner" positionX="-36" positionY="153" width="128" height="300"/>
-        <element name="Repository" positionX="-63" positionY="-18" width="128" height="1155"/>
+        <element name="Repository" positionX="-63" positionY="-18" width="128" height="1170"/>
         <element name="RepositoryQuery" positionX="-54" positionY="135" width="128" height="120"/>
+        <element name="MyRepositoryQuery" positionX="-54" positionY="135" width="128" height="105"/>
     </elements>
 </model>

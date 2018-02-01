@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainAccess
 
 class MyRepositoriesPresenter: MyRepositoriesPresenterProtocol {
     weak var view: MyRepositoriesViewProtocol?
@@ -15,7 +16,9 @@ class MyRepositoriesPresenter: MyRepositoriesPresenterProtocol {
     
     func viewDidAppear() {
         if let router = router {
-            if let accessToken = router.getGithubAccessToken() {
+            let keychain = Keychain(service: kKeyChainService)
+            
+            if let _ = keychain[kGitHubAccessToken] {
                 retrieveRepositories(withQuery: nil)
             } else {
                 router.presentLoginScreen(from: view!)

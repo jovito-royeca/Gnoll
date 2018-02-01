@@ -18,47 +18,38 @@ class MyRepositoriesInteractor: MyRepositoriesInteractorInputProtocol {
         self.query = query
         var entities = [RepositoryEntity]()
         
-        if let query = query {
-            if query.count == 0 {
-                presenter?.didRetrieveRepositories(entities)
+        if let repositories = localDataManager?.retrieveRepositories(withQuery: query) {
+            for repo in repositories {
+                entities.append(DataMapper.coreData2Entity(repository: repo))
+            }
+            
+            if  entities.isEmpty {
+                remoteDataManager?.retrieveRepositories()
             } else {
-                if let repositories = localDataManager?.retrieveRepositories(withQuery: query) {
-                    for repo in repositories {
-                        entities.append(DataMapper.coreData2Entity(repository: repo))
-                    }
-                    
-                    if  entities.isEmpty {
-                        remoteDataManager?.retrieveRepositories(withQuery: query)
-                    } else {
-                        presenter?.didRetrieveRepositories(entities)
-                    }
-                } else {
-                    remoteDataManager?.retrieveRepositories(withQuery: query)
-                }
+                presenter?.didRetrieveRepositories(entities)
             }
         } else {
-            presenter?.didRetrieveRepositories(entities)
+            remoteDataManager?.retrieveRepositories()
         }
     }
 }
 
 extension MyRepositoriesInteractor: MyRepositoriesRemoteDataManagerOutputProtocol {
-    func onRepositoriesRetrieved(_ json: [String: Any]) {
-        if let query = query {
-            let completion = { () -> Void  in
-                var entities = [RepositoryEntity]()
-                
-                if let repositories = self.localDataManager?.retrieveRepositories(withQuery: query) {
-                    for repo in repositories {
-                        entities.append(DataMapper.coreData2Entity(repository: repo))
-                    }
-                    
-                    self.presenter?.didRetrieveRepositories(entities)
-                }
-            }
+    func onRepositoriesRetrieved(_ json: [[String: Any]]) {
+        
+        let completion = { () -> Void  in
+            var entities = [RepositoryEntity]()
             
-            localDataManager?.saveRepositoryQuery(withQuery: query, json: json, completion: completion)
+            if let repositories = self.localDataManager?.retrieveRepositories(withQuery: self.query) {
+                for repo in repositories {
+                    entities.append(DataMapper.coreData2Entity(repository: repo))
+                }
+                
+                self.presenter?.didRetrieveRepositories(entities)
+            }
         }
+        
+        localDataManager?.saveRepository(json: json, completion: completion)
     }
     
     func onError(_ error: Error) {

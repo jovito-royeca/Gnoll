@@ -66,11 +66,11 @@ extension Repository {
     @NSManaged public var notificationsURL: String?
     @NSManaged public var openIssues: Int32
     @NSManaged public var openIssuesCount: Int32
+    @NSManaged public var private_: Bool
     @NSManaged public var pullsURL: String?
     @NSManaged public var pushedAt: NSDate?
     @NSManaged public var releasesURL: String?
     @NSManaged public var repositoryDescription: String?
-    @NSManaged public var private_: Bool
     @NSManaged public var score: Double
     @NSManaged public var size: Int64
     @NSManaged public var sshURL: String?
@@ -87,14 +87,15 @@ extension Repository {
     @NSManaged public var url: String?
     @NSManaged public var watchers: Int32
     @NSManaged public var watchersCount: Int32
-    @NSManaged public var repositoryQuery: RepositoryQuery?
+    @NSManaged public var forkItems: NSSet?
     @NSManaged public var license: License?
     @NSManaged public var owner: Owner?
-    @NSManaged public var forkItems: NSSet?
+    @NSManaged public var repositoryQuery: RepositoryQuery?
+    @NSManaged public var myRepositoryQuery: MyRepositoryQuery?
 
 }
 
-// MARK: Generated accessors for formItems
+// MARK: Generated accessors for forkItems
 extension Repository {
 
     @objc(addForkItemsObject:)

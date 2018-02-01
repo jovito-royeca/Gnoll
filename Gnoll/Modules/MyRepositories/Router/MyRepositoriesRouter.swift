@@ -62,13 +62,8 @@ class MyRepositoriesRouter: MyRepositoriesRouterProtocol {
     }
     
     // MARK: Helper methods
-    func getGithubAccessToken() -> String? {
-        let keychain = Keychain(service: "com.jovitoroyeca.Gnoll")
-        return keychain[kGitHubAccessToken]
-    }
-    
     func setGithubAccessToken(token: String) {
-        let keychain = Keychain(service: "com.jovitoroyeca.Gnoll")
+        let keychain = Keychain(service: kKeyChainService)
         keychain[kGitHubAccessToken] = token
     }
     

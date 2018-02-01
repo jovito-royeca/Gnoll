@@ -14,7 +14,7 @@ class RepositoriesPresenter: RepositoriesPresenterProtocol {
     var router: RepositoriesRouterProtocol?
     
     func viewDidLoad() {
-        retrieveRepositories(withQuery: nil)
+        retrieveRepositories(withQuery: "A")
     }
     
     func retrieveRepositories(withQuery query: String?) {

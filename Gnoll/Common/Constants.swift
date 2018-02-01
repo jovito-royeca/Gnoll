@@ -8,6 +8,8 @@
 
 import Foundation
 
+let kKeyChainService      = "com.jovitoroyeca.Gnoll"
+
 let kGitHubAccessToken    = "kGitHubAccessToken"
 let kGitHubClientID       = "660300e64fbc791535e3"
 let kGitHubClientSecret   = "40708f3557eaac053330995aef08925664f807db"
