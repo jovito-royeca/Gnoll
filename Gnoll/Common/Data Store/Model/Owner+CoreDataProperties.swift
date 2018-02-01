@@ -17,7 +17,7 @@ extension Owner {
         return NSFetchRequest<Owner>(entityName: "Owner")
     }
 
-    @NSManaged public var avatarUrl: String?
+    @NSManaged public var avatarURL: String?
     @NSManaged public var eventsUrl: String?
     @NSManaged public var followersUrl: String?
     @NSManaged public var followingUrl: String?

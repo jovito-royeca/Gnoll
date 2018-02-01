@@ -13,7 +13,7 @@
         <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="license" inverseEntity="Repository" syncable="YES"/>
     </entity>
     <entity name="Owner" representedClassName="Owner" syncable="YES">
-        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="followersUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="followingUrl" optional="YES" attributeType="String" syncable="YES"/>
