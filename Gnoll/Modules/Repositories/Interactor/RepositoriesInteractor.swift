@@ -53,6 +53,7 @@ class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
         
         json["id"] = repository.id
         json["forks"] = repository.forks
+        json["forks_url"] = repository.forksURL
         json["watchers"] = repository.watchers
         json["private"] = repository.private_
         if let x = repository.repositoryDescription {

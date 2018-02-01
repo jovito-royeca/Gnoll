@@ -44,10 +44,16 @@ class RepositoriesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: Custom methods
+    @objc func retrieveRepositories(withQuery query: String) {
+        presenter?.retrieveRepositories(withQuery: query)
+    }
 }
 
+// MARK: RepositoriesViewProtocol
 extension RepositoriesViewController: RepositoriesViewProtocol {
-    func showRepositories(with repositories: [RepositoryEntity]) {
+    func showRepositories(_ repositories: [RepositoryEntity]) {
         self.repositories = repositories
         tableView.reloadData()
     }
@@ -66,10 +72,6 @@ extension RepositoriesViewController: RepositoriesViewProtocol {
     func hideLoading() {
         print("hideLoading()")
         MBProgressHUD.hide(for: view, animated: true)
-    }
-    
-    @objc func retrieveRepositories(withQuery query: String) {
-        presenter?.retrieveRepositories(withQuery: query)
     }
 }
 
@@ -119,6 +121,7 @@ extension RepositoriesViewController: UITableViewDelegate {
     }
 }
 
+// MARK: UISearchResultsUpdating
 extension RepositoriesViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(retrieveRepositories(withQuery:)), object: nil)

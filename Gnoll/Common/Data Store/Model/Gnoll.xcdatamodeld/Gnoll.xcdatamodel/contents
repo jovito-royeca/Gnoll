@@ -116,6 +116,7 @@
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="watchers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="watchersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="forkItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="forkItems" inverseEntity="Repository" syncable="YES"/>
         <relationship name="license" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="License" inverseName="repositories" inverseEntity="License" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="repositories" inverseEntity="Owner" syncable="YES"/>
         <relationship name="repositoryQuery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RepositoryQuery" inverseName="items" inverseEntity="RepositoryQuery" syncable="YES"/>
@@ -130,7 +131,7 @@
             </userInfo>
         </attribute>
         <attribute name="totalCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="repositoryQuery" inverseEntity="Repository" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Repository" inverseName="repositoryQuery" inverseEntity="Repository" syncable="YES"/>
         <userInfo>
             <entry key="hyper.isPrimaryKey" value="true"/>
             <entry key="sync.isPrimaryKey" value="true"/>
@@ -139,7 +140,7 @@
     <elements>
         <element name="License" positionX="-54" positionY="144" width="128" height="120"/>
         <element name="Owner" positionX="-36" positionY="153" width="128" height="300"/>
-        <element name="Repository" positionX="-63" positionY="-18" width="128" height="1140"/>
+        <element name="Repository" positionX="-63" positionY="-18" width="128" height="1155"/>
         <element name="RepositoryQuery" positionX="-54" positionY="135" width="128" height="120"/>
     </elements>
 </model>

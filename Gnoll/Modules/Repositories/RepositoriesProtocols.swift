@@ -13,7 +13,7 @@ protocol RepositoriesViewProtocol: class {
     var presenter: RepositoriesPresenterProtocol? { get set }
     
     // PRESENTER -> VIEW
-    func showRepositories(with repositories: [RepositoryEntity])
+    func showRepositories(_ repositories: [RepositoryEntity])
     func showError(_ error: Error)
     func showLoading()
     func hideLoading()
@@ -50,7 +50,7 @@ protocol RepositoriesPresenterProtocol: class {
 // MARK: Router
 protocol RepositoriesRouterProtocol: class {
     static func initRepositoriesModule(withView view: RepositoriesViewController)
-    // PRESENTER -> WIREFRAME
+    // PRESENTER -> ROUTER
     func presentRepositoryDetailsScreen(from view: RepositoriesViewProtocol, forRepository repository: RepositoryEntity)
 }
 
@@ -70,7 +70,7 @@ protocol RepositoriesRemoteDataManagerOutputProtocol: class {
 
 protocol RepositoriesLocalDataManagerInputProtocol: class {
     // INTERACTOR -> LOCALDATAMANAGER
-    func retrieveRepositories(withQuery query: String) throws -> [Repository]
+    func retrieveRepositories(withQuery query: String) -> [Repository]
     func saveRepositoryQuery(withQuery query: String, json: [String: Any], completion: @escaping () -> Void)
 }
 

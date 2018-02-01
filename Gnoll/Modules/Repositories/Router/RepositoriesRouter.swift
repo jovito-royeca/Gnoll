@@ -27,6 +27,10 @@ class RepositoriesRouter: RepositoriesRouterProtocol {
     }
     
     func presentRepositoryDetailsScreen(from view: RepositoriesViewProtocol, forRepository repository: RepositoryEntity) {
+        let router = RepositoryDetailRouter.createRepositoryDetailModule(withRepository: repository)
         
+        if let sourceView = view as? UIViewController {
+            sourceView.navigationController?.pushViewController(router, animated: true)
+        }
     }
 }

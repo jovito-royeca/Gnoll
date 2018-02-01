@@ -14,8 +14,7 @@ class RepositoriesPresenter: RepositoriesPresenterProtocol {
     var router: RepositoriesRouterProtocol?
     
     func viewDidLoad() {
-        view?.showLoading()
-        interactor?.retrieveRepositories(withQuery: nil)
+        retrieveRepositories(withQuery: nil)
     }
     
     func retrieveRepositories(withQuery query: String?) {
@@ -32,7 +31,7 @@ extension RepositoriesPresenter: RepositoriesInteractorOutputProtocol {
     
     func didRetrieveRepositories(_ repositories: [RepositoryEntity]) {
         view?.hideLoading()
-        view?.showRepositories(with: repositories)
+        view?.showRepositories(repositories)
     }
     
     func onError(_ error: Error) {

@@ -2,7 +2,7 @@
 //  License+CoreDataClass.swift
 //  Gnoll
 //
-//  Created by Jovito Royeca on 31/01/2018.
+//  Created by Jovito Royeca on 01/02/2018.
 //  Copyright © 2018 Jovito Royeca. All rights reserved.
 //
 //

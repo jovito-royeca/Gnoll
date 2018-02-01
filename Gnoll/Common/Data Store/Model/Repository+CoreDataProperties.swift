@@ -2,7 +2,7 @@
 //  Repository+CoreDataProperties.swift
 //  Gnoll
 //
-//  Created by Jovito Royeca on 31/01/2018.
+//  Created by Jovito Royeca on 01/02/2018.
 //  Copyright © 2018 Jovito Royeca. All rights reserved.
 //
 //
@@ -90,23 +90,23 @@ extension Repository {
     @NSManaged public var repositoryQuery: RepositoryQuery?
     @NSManaged public var license: License?
     @NSManaged public var owner: Owner?
+    @NSManaged public var forkItems: NSSet?
 
 }
 
-//// MARK: Generated accessors for items
-//extension Repository {
-//
-//    @objc(addItemsObject:)
-//    @NSManaged public func addToItems(_ value: RepositoryQuery)
-//
-//    @objc(removeItemsObject:)
-//    @NSManaged public func removeFromItems(_ value: RepositoryQuery)
-//
-//    @objc(addItems:)
-//    @NSManaged public func addToItems(_ values: NSSet)
-//
-//    @objc(removeItems:)
-//    @NSManaged public func removeFromItems(_ values: NSSet)
-//
-//}
+// MARK: Generated accessors for formItems
+extension Repository {
 
+    @objc(addForkItemsObject:)
+    @NSManaged public func addToForkItems(_ value: Repository)
+
+    @objc(removeForkItemsObject:)
+    @NSManaged public func removeFromForkItems(_ value: Repository)
+
+    @objc(addForkItems:)
+    @NSManaged public func addToForkItems(_ values: NSSet)
+
+    @objc(removeForkItems:)
+    @NSManaged public func removeFromForkItems(_ values: NSSet)
+
+}

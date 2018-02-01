@@ -82,6 +82,7 @@ class RepositoryEntity: Mappable {
     var watchersCount = 0
     var license: LicenseEntity?
     var owner: OwnerEntity?
+    var forkItems: [RepositoryEntity]?
     
     required init?(map: Map) {
         
@@ -161,5 +162,6 @@ class RepositoryEntity: Mappable {
         watchersCount <- map["watchers_count"]
         license <- map["license"]
         owner <- map["owner"]
+        forkItems <- map["forkItems"]
     }
 }

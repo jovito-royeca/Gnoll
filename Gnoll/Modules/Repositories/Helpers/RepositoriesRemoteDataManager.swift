@@ -16,6 +16,7 @@ class RepositoriesRemoteDataManager: RepositoriesRemoteDataManagerInputProtocol 
     
     func retrieveRepositories(withQuery query: String) {
         let requestString = "\(apiUrl)\(query)"
+        
         Alamofire.request(requestString, method: .get)
                  .validate()
                  .responseJSON { response in
