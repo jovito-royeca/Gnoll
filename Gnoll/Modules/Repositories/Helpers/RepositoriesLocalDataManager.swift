@@ -12,10 +12,10 @@ import Sync
 class RepositoriesLocalDataManager: RepositoriesLocalDataManagerInputProtocol {
     func retrieveRepositories(withQuery query: String) throws -> [Repository] {
         let dataStack = DataStack(modelName: "Gnoll")
-        
         let request: NSFetchRequest<RepositoryQuery> = NSFetchRequest(entityName: "RepositoryQuery")
-        request.predicate = NSPredicate(format: "query == %@", query)
         var repos = [Repository]()
+        
+        request.predicate = NSPredicate(format: "query == %@", query)
         for rq in try dataStack.mainContext.fetch(request) {
             repos = rq.items?.allObjects as! [Repository]
         }
@@ -25,7 +25,7 @@ class RepositoriesLocalDataManager: RepositoriesLocalDataManagerInputProtocol {
         return repos
     }
     
-    func saveRepositoryQuery(withQuery query: String, json: [String: Any]) {
+    func saveRepositoryQuery(withQuery query: String, json: [String: Any], completion: @escaping () -> Void) {
         let dataStack = DataStack(modelName: "Gnoll")
         
         // delete all first
@@ -43,9 +43,10 @@ class RepositoriesLocalDataManager: RepositoriesLocalDataManagerInputProtocol {
         newJson["date"] = Date()
         
         dataStack.sync([newJson], inEntityNamed: "RepositoryQuery") { error in
-            if let error = error {
-                print("\(error)")
-            }
+//            if let error = error {
+//                print("\(error)")
+//            }
+            completion()
         }
     }
 }

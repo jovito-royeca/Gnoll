@@ -19,6 +19,7 @@ class RepositoriesPresenter: RepositoriesPresenterProtocol {
     }
     
     func retrieveRepositories(withQuery query: String?) {
+        view?.showLoading()
         interactor?.retrieveRepositories(withQuery: query)
     }
     

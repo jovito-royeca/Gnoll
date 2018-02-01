@@ -85,22 +85,24 @@ class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
 extension RepositoriesInteractor: RepositoriesRemoteDataManagerOutputProtocol {
     func onRepositoriesRetrieved(_ json: [String: Any]) {
         if let query = query {
-            localDataManager?.saveRepositoryQuery(withQuery: query, json: json)
-            
-            var entities = [RepositoryEntity]()
-            
-            do {
-                if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
-                    for repo in repositories {
-                        entities.append(coreData2Entity(repository: repo))
+            let completion = { () -> Void  in
+                var entities = [RepositoryEntity]()
+                
+                do {
+                    if let repositories = try self.localDataManager?.retrieveRepositories(withQuery: query) {
+                        for repo in repositories {
+                            entities.append(self.coreData2Entity(repository: repo))
+                        }
+                        
+                        self.presenter?.didRetrieveRepositories(entities)
                     }
                     
-                    presenter?.didRetrieveRepositories(entities)
+                } catch {
+                    self.presenter?.didRetrieveRepositories(entities)
                 }
-                
-            } catch {
-                presenter?.didRetrieveRepositories(entities)
             }
+            
+            localDataManager?.saveRepositoryQuery(withQuery: query, json: json, completion: completion)
         }
     }
     
