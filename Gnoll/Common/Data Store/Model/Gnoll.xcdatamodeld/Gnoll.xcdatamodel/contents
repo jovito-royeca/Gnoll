@@ -3,7 +3,7 @@
     <entity name="License" representedClassName="License" syncable="YES">
         <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="spdxId" optional="YES" attributeType="String" syncable="YES">
+        <attribute name="spdxID" optional="YES" attributeType="String" syncable="YES">
             <userInfo>
                 <entry key="hyper.isPrimaryKey" value="true"/>
                 <entry key="sync.isPrimaryKey" value="true"/>
@@ -14,11 +14,11 @@
     </entity>
     <entity name="Owner" representedClassName="Owner" syncable="YES">
         <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="eventsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="followersUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="followingUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="gistsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="htmlUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followersURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followingURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gistsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="htmlURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
             <userInfo>
                 <entry key="hyper.isPrimaryKey" value="true"/>
@@ -26,88 +26,92 @@
             </userInfo>
         </attribute>
         <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="organizationsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organizationsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ownerType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="receivedEventsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="reposUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receivedEventsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reposURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="siteAdmin" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="starredUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="subscriptionsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starredURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscriptionsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="owner" inverseEntity="Repository" syncable="YES"/>
     </entity>
     <entity name="Repository" representedClassName="Repository" syncable="YES">
         <attribute name="archived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="archiveUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="assigneesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="blobsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="branchesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="cloneUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="collaboratorsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="commentsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="commitsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="compareUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="contentsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="contributorsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="archiveURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="assigneesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="blobsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="branchesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cloneURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="collaboratorsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commitsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="compareURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contributorsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="defaultBranch" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="deploymentsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="downloadsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="eventsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deploymentsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fork" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="forkCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="forks" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="forksUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forksURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="gitCommitsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="gitRefsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="gitTagsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="gitUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gitCommitsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gitRefsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gitTagsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gitURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasDownloads" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasIssues" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="hasPages" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="hasProjects" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasWiki" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="homepage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="hooksUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="htmlUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hooksURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="htmlURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
             <userInfo>
                 <entry key="hyper.isPrimaryKey" value="true"/>
                 <entry key="sync.isPrimaryKey" value="true"/>
             </userInfo>
         </attribute>
-        <attribute name="issueCommentUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="issueEventsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="issuesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="keysUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="labelsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issueCommentURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issueEventsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issuesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keysURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="labelsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="languagesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="mergesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="milestonesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="mirrorUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="languagesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mergesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="milestonesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mirrorURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="notificationsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notificationsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="openIssues" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="openIssuesCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="pullsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="private_" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="sync.remoteKey" value="private"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pullsURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pushedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="releasesUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releasesURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="repositoryDescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="repositoryPrivate" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="sshUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sshURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stargazersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="stargazersUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="statusesUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="subscribersUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="subscriptionUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="svnUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="tagsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="teamsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="treesUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stargazersURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statusesURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscribersURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subscriptionURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="svnURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teamsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="treesURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="watchers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>

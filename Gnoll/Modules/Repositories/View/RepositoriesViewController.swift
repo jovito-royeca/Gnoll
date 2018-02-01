@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class RepositoriesViewController: UIViewController {
 
@@ -14,12 +15,16 @@ class RepositoriesViewController: UIViewController {
     var searchController: UISearchController?
     var presenter: RepositoriesPresenterProtocol?
     var repositories = [RepositoryEntity]()
+    var message:String?
     
     // MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "GitHub"
+        
         searchController = UISearchController(searchResultsController: nil)
         searchController!.searchResultsUpdater = self
         searchController!.searchBar.placeholder = "Search"
@@ -29,7 +34,6 @@ class RepositoriesViewController: UIViewController {
         navigationItem.searchController = searchController
         
         tableView.estimatedRowHeight = kRepositoryTableViewCellHeight
-        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.setNeedsLayout()
         tableView.layoutIfNeeded()
         
@@ -49,15 +53,19 @@ extension RepositoriesViewController: RepositoriesViewProtocol {
     }
     
     func showError(_ error: Error) {
-        print("showError(): \(error.localizedDescription)")
+        message = error.localizedDescription
+        repositories = [RepositoryEntity]()
+        tableView.reloadData()
     }
     
     func showLoading() {
         print("showLoading()")
+        MBProgressHUD.showAdded(to: view, animated: true)
     }
     
     func hideLoading() {
         print("hideLoading()")
+        MBProgressHUD.hide(for: view, animated: true)
     }
     
     @objc func retrieveRepositories(withQuery query: String) {
@@ -71,17 +79,25 @@ extension RepositoriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell?
         
-        if let c = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as? RepositoryTableViewCell {
-            let repository = repositories[indexPath.row]
-            c.show(repository: repository)
-            cell = c
+        if repositories.count > 0 {
+            if let c = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as? RepositoryTableViewCell {
+                let repository = repositories[indexPath.row]
+                c.show(repository: repository)
+                cell = c
+            }
+        } else {
+            if let c = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as? MessageTableViewCell {
+                c.messageLabel.text = message
+                cell = c
+            }
         }
-        
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repositories.count
+        let rows = repositories.count > 0 ? repositories.count : 1
+        
+        return rows
     }
 }
 
@@ -89,6 +105,17 @@ extension RepositoriesViewController: UITableViewDataSource {
 extension RepositoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showRepositoryDetails(forRepository: repositories[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var height = CGFloat(0)
+        
+        if repositories.count == 0 {
+            height = tableView.frame.size.height
+        } else {
+            height = UITableViewAutomaticDimension
+        }
+        return height
     }
 }
 

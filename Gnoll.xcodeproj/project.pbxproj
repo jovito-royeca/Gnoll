@@ -28,6 +28,9 @@
 		112AFDD42022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFDD32022913D00D9DA1E /* RepositoryTableViewCell.swift */; };
 		112AFDD52022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFDD32022913D00D9DA1E /* RepositoryTableViewCell.swift */; };
 		112AFDD62022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFDD32022913D00D9DA1E /* RepositoryTableViewCell.swift */; };
+		112AFDD82022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFDD72022BE3900D9DA1E /* MessageTableViewCell.swift */; };
+		112AFDD92022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFDD72022BE3900D9DA1E /* MessageTableViewCell.swift */; };
+		112AFDDA2022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFDD72022BE3900D9DA1E /* MessageTableViewCell.swift */; };
 		113237962020DE290023ADB6 /* Repository+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132378E2020DE290023ADB6 /* Repository+CoreDataClass.swift */; };
 		113237972020DE290023ADB6 /* Repository+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132378E2020DE290023ADB6 /* Repository+CoreDataClass.swift */; };
 		113237982020DE290023ADB6 /* Repository+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1132378E2020DE290023ADB6 /* Repository+CoreDataClass.swift */; };
@@ -108,6 +111,7 @@
 		1107F2B820209607000E7579 /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
 		112AFDD220214A1200D9DA1E /* Gnoll 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Gnoll 2.xcdatamodel"; sourceTree = "<group>"; };
 		112AFDD32022913D00D9DA1E /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		112AFDD72022BE3900D9DA1E /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		1132378E2020DE290023ADB6 /* Repository+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1132378F2020DE290023ADB6 /* Repository+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		113237902020DE290023ADB6 /* License+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "License+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 			children = (
 				118FD63420206A7E00E17DEA /* RepositoriesViewController.swift */,
 				112AFDD32022913D00D9DA1E /* RepositoryTableViewCell.swift */,
+				112AFDD72022BE3900D9DA1E /* MessageTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -764,6 +769,7 @@
 				1107F2A720208917000E7579 /* RepositoryEntity.swift in Sources */,
 				112AFDD42022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */,
 				1132379C2020DE290023ADB6 /* License+CoreDataClass.swift in Sources */,
+				112AFDD82022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */,
 				1107F2B12020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				113237AB2020DE290023ADB6 /* RepositoryQuery+CoreDataProperties.swift in Sources */,
 				11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */,
@@ -793,6 +799,7 @@
 				1107F2A820208917000E7579 /* RepositoryEntity.swift in Sources */,
 				112AFDD52022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */,
 				1132379D2020DE290023ADB6 /* License+CoreDataClass.swift in Sources */,
+				112AFDD92022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */,
 				1107F2B22020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				113237AC2020DE290023ADB6 /* RepositoryQuery+CoreDataProperties.swift in Sources */,
 				118FD6322020695200E17DEA /* MainViewController.swift in Sources */,
@@ -822,6 +829,7 @@
 				1107F2A920208917000E7579 /* RepositoryEntity.swift in Sources */,
 				112AFDD62022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */,
 				1132379E2020DE290023ADB6 /* License+CoreDataClass.swift in Sources */,
+				112AFDDA2022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */,
 				1107F2B32020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				113237AD2020DE290023ADB6 /* RepositoryQuery+CoreDataProperties.swift in Sources */,
 				118FD6332020695200E17DEA /* MainViewController.swift in Sources */,

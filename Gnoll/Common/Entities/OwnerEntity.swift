@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 
 class OwnerEntity: Mappable {
-    var avatarUrl: String?
+    var avatarURL: String?
     var eventsUrl: String?
     var followersUrl: String?
     var followingUrl: String?
@@ -33,7 +33,7 @@ class OwnerEntity: Mappable {
     
     // Mappable
     func mapping(map: Map) {
-        avatarUrl <- map["avatar_url"]
+        avatarURL <- map["avatar_url"]
         eventsUrl <- map["events_url"]
         followersUrl <- map["followers_url"]
         followingUrl <- map["following_url"]

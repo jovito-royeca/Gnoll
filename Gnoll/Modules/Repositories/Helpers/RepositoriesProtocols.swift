@@ -26,7 +26,7 @@ protocol RepositoriesInteractorInputProtocol: class {
     var remoteDataManager: RepositoriesRemoteDataManagerInputProtocol? { get set }
     
     // PRESENTER -> INTERACTOR
-    func retrieveRepositories(withQuery query: String)
+    func retrieveRepositories(withQuery query: String?)
 }
 
 protocol RepositoriesInteractorOutputProtocol: class {
@@ -43,7 +43,7 @@ protocol RepositoriesPresenterProtocol: class {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
-    func retrieveRepositories(withQuery query: String)
+    func retrieveRepositories(withQuery query: String?)
     func showRepositoryDetails(forRepository repository: RepositoryEntity)
 }
 

@@ -18,20 +18,20 @@ extension Owner {
     }
 
     @NSManaged public var avatarURL: String?
-    @NSManaged public var eventsUrl: String?
-    @NSManaged public var followersUrl: String?
-    @NSManaged public var followingUrl: String?
-    @NSManaged public var gistsUrl: String?
-    @NSManaged public var htmlUrl: String?
+    @NSManaged public var eventsURL: String?
+    @NSManaged public var followersURL: String?
+    @NSManaged public var followingURL: String?
+    @NSManaged public var gistsURL: String?
+    @NSManaged public var htmlURL: String?
     @NSManaged public var id: Int64
     @NSManaged public var login: String?
-    @NSManaged public var organizationsUrl: String?
+    @NSManaged public var organizationsURL: String?
     @NSManaged public var ownerType: String?
-    @NSManaged public var receivedEventsUrl: String?
-    @NSManaged public var reposUrl: String?
+    @NSManaged public var receivedEventsURL: String?
+    @NSManaged public var reposURL: String?
     @NSManaged public var siteAdmin: Bool
-    @NSManaged public var starredUrl: String?
-    @NSManaged public var subscriptionsUrl: String?
+    @NSManaged public var starredURL: String?
+    @NSManaged public var subscriptionsURL: String?
     @NSManaged public var url: String?
     @NSManaged public var repositories: NSSet?
 

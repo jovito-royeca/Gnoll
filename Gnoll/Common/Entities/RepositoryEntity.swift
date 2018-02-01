@@ -60,7 +60,7 @@ class RepositoryEntity: Mappable {
     var openIssues = 0
     var openIssuesCount = 0
     var repositoryDescription: String?
-    var repositoryPrivate = false
+    var private_ = false
     var pullsUrl: String?
     var pushedAt: NSDate?
     var releasesUrl: String?
@@ -139,7 +139,7 @@ class RepositoryEntity: Mappable {
         openIssues <- map["open_issues"]
         openIssuesCount <- map["open_issues_count"]
         repositoryDescription <- map["description"]
-        repositoryPrivate <- map["private"]
+        private_ <- map["private"]
         pullsUrl <- map["pulls_url"]
         pushedAt <- map["pushed_at"]
         releasesUrl <- map["releases_url"]

@@ -19,7 +19,7 @@ extension License {
 
     @NSManaged public var key: String?
     @NSManaged public var name: String?
-    @NSManaged public var spdxId: String?
+    @NSManaged public var spdxID: String?
     @NSManaged public var url: String?
     @NSManaged public var repositories: NSSet?
 

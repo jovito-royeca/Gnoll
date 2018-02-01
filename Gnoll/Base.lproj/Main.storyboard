@@ -86,7 +86,7 @@
                                                     <color key="textColor" red="0.29411764709999999" green="0.33333333329999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWr-Jt-eCN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWr-Jt-eCN">
                                                     <rect key="frame" x="64" y="50" width="70" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="fFH-lF-buL"/>
@@ -96,7 +96,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-2J-ox2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-2J-ox2">
                                                     <rect key="frame" x="142" y="50" width="70" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="0zl-aE-znT"/>
@@ -125,10 +125,35 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="MGE-EY-R7j" id="rnB-iV-igc"/>
-                                            <outlet property="forksLabel" destination="uBf-2J-ox2" id="tyI-2e-1ng"/>
+                                            <outlet property="forksLabel" destination="QWr-Jt-eCN" id="UOh-VN-kUH"/>
                                             <outlet property="nameLabel" destination="nUA-NP-c4e" id="EYo-86-U1u"/>
                                             <outlet property="ownerAvatar" destination="8RW-Yp-nwG" id="W6H-BQ-Q21"/>
-                                            <outlet property="watchersLabel" destination="QWr-Jt-eCN" id="OUn-yF-ucJ"/>
+                                            <outlet property="watchersLabel" destination="uBf-2J-ox2" id="4Ts-a9-spL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="IAv-dJ-9Jv" customClass="MessageTableViewCell" customModule="Gnoll" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="98" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IAv-dJ-9Jv" id="rhb-Q2-meb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="750-I5-ehJ">
+                                                    <rect key="frame" x="15" y="12" width="345" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="750-I5-ehJ" firstAttribute="trailing" secondItem="rhb-Q2-meb" secondAttribute="trailingMargin" id="1qP-9k-0lY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="750-I5-ehJ" secondAttribute="bottom" constant="1" id="Olt-sb-fWe"/>
+                                                <constraint firstItem="750-I5-ehJ" firstAttribute="leading" secondItem="rhb-Q2-meb" secondAttribute="leadingMargin" id="RKV-bn-5Fp"/>
+                                                <constraint firstItem="750-I5-ehJ" firstAttribute="top" secondItem="rhb-Q2-meb" secondAttribute="topMargin" constant="1" id="eqs-iw-oJ0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="750-I5-ehJ" id="WBJ-uI-BSU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -12,7 +12,7 @@ import ObjectMapper
 class LicenseEntity: Mappable {
     var key: String?
     var name: String?
-    var spdxId: String?
+    var spdxID: String?
     var url: String?
     
     required init?(map: Map) {
@@ -23,7 +23,7 @@ class LicenseEntity: Mappable {
     func mapping(map: Map) {
         key <- map["key"]
         name <- map["name"]
-        spdxId <- map["spdx_id"]
+        spdxID <- map["spdx_id"]
         url <- map["url"]
     }
 }
