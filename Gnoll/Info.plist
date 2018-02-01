@@ -23,7 +23,8 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Gnoll</string>
+				<string>oauth-gnoll</string>
+				<string>com.jovitoroyeca.Gnoll</string>
 			</array>
 		</dict>
 	</array>

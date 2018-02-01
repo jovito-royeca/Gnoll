@@ -7,17 +7,12 @@
 //
 
 import UIKit
-import KeychainAccess
 
 class MyRepositoriesInteractor: MyRepositoriesInteractorInputProtocol {
     weak var presenter: MyRepositoriesInteractorOutputProtocol?
     var localDataManager: MyRepositoriesLocalDataManagerInputProtocol?
     var remoteDataManager: MyRepositoriesRemoteDataManagerInputProtocol?
     var query: String?
-    
-    func checkAuthentication() -> Bool {
-        return true
-    }
     
     func retrieveRepositories(withQuery query: String?) {
         self.query = query

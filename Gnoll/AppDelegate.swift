@@ -47,10 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        var handled = false
+        
         if (url.host == "oauth-callback") {
             OAuthSwift.handle(url: url)
+            handled = true
         }
-        return true
+        
+        return handled
     }
 
 }

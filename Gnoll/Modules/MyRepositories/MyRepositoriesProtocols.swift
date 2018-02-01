@@ -26,7 +26,6 @@ protocol MyRepositoriesInteractorInputProtocol: class {
     var remoteDataManager: MyRepositoriesRemoteDataManagerInputProtocol? { get set }
     
     // PRESENTER -> INTERACTOR
-    func checkAuthentication() -> Bool
     func retrieveRepositories(withQuery query: String?)
 }
 
@@ -54,6 +53,8 @@ protocol MyRepositoriesRouterProtocol: class {
     // PRESENTER -> ROUTER
     func presentRepositoryDetailsScreen(from view: MyRepositoriesViewProtocol, forRepository repository: RepositoryEntity)
     func presentLoginScreen(from view: MyRepositoriesViewProtocol)
+    func getGithubAccessToken() -> String?
+    func setGithubAccessToken(token: String)
 }
 
 // MARK: Helpers

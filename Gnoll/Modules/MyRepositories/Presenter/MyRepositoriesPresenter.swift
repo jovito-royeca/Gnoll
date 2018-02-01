@@ -14,11 +14,11 @@ class MyRepositoriesPresenter: MyRepositoriesPresenterProtocol {
     var router: MyRepositoriesRouterProtocol?
     
     func viewDidAppear() {
-        if let interactor = interactor {
-            if interactor.checkAuthentication() {
+        if let router = router {
+            if let accessToken = router.getGithubAccessToken() {
                 retrieveRepositories(withQuery: nil)
             } else {
-                router?.presentLoginScreen(from: view!)
+                router.presentLoginScreen(from: view!)
             }
         }
     }
