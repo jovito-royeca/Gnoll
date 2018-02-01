@@ -28,6 +28,11 @@ class RepositoriesViewController: UIViewController {
         definesPresentationContext = true
         navigationItem.searchController = searchController
         
+        tableView.estimatedRowHeight = kRepositoryTableViewCellHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.setNeedsLayout()
+        tableView.layoutIfNeeded()
+        
         presenter?.viewDidLoad()
     }
 
@@ -60,17 +65,19 @@ extension RepositoriesViewController: RepositoriesViewProtocol {
     }
 }
 
+// MARK: UITableViewDataSource
 extension RepositoriesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell?
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath)
-        let repository = repositories[indexPath.row]
+        if let c = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as? RepositoryTableViewCell {
+            let repository = repositories[indexPath.row]
+            c.show(repository: repository)
+            cell = c
+        }
         
-        cell.textLabel?.text = repository.name
-        cell.detailTextLabel?.text = repository.repositoryDescription
-        
-        return cell
+        return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,6 +85,7 @@ extension RepositoriesViewController: UITableViewDataSource {
     }
 }
 
+// MARK: UITableViewDelegate
 extension RepositoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.showRepositoryDetails(forRepository: repositories[indexPath.row])

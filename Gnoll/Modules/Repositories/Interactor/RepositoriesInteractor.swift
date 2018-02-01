@@ -20,25 +20,63 @@ class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
         var entities = [RepositoryEntity]()
         
         do {
-            if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
-                for repo in repositories {
-                    if let entity = RepositoryEntity(JSON: repo.export()) {
-                        entities.append(entity)
-                    }
-                }
-                
-                if  entities.isEmpty {
-                    remoteDataManager?.retrieveRepositories(withQuery: query)
-                } else {
-                    presenter?.didRetrieveRepositories(entities)
-                }
+            if query.count == 0 {
+                presenter?.didRetrieveRepositories(entities)
             } else {
-                remoteDataManager?.retrieveRepositories(withQuery: query)
+                if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
+                    for repo in repositories {
+                        entities.append(coreData2Entity(repository: repo))
+                    }
+                    
+                    if  entities.isEmpty {
+                        remoteDataManager?.retrieveRepositories(withQuery: query)
+                    } else {
+                        presenter?.didRetrieveRepositories(entities)
+                    }
+                } else {
+                    remoteDataManager?.retrieveRepositories(withQuery: query)
+                }
             }
             
         } catch {
             presenter?.didRetrieveRepositories(entities)
         }
+    }
+    
+    func coreData2Entity(repository: Repository) -> RepositoryEntity {
+
+        // RepositoryEntity
+        var json = [String: Any]()
+        
+        json["id"] = repository.id
+        json["fork"] = repository.fork
+        json["watchers"] = repository.watchers
+        json["watchers"] = repository.watchers
+        if let x = repository.repositoryDescription {
+            json["description"] = x
+        }
+        if let x = repository.name {
+            json["name"] = x
+        }
+        
+        // OwnerEntity
+        if let owner = repository.owner {
+            var json2 = [String: Any]()
+            
+            json2["id"] = owner.id
+            if let x = owner.login {
+                json2["login"] = x
+            }
+            if let x = owner.avatarUrl {
+                json2["avatarUrl"] = x
+            }
+            
+            json["owner"] = json2//OwnerEntity(JSON: json2)
+        }
+        
+        let entity = RepositoryEntity(JSON: json)!
+        return entity
+//        return RepositoryEntity(JSON: json)!
     }
 }
 
@@ -52,19 +90,7 @@ extension RepositoriesInteractor: RepositoriesRemoteDataManagerOutputProtocol {
             do {
                 if let repositories = try localDataManager?.retrieveRepositories(withQuery: query) {
                     for repo in repositories {
-//                        let json = repo.export()
-                        var json = [String: Any]()
-                        json["id"] = repo.id
-                        if let x = repo.repositoryDescription {
-                            json["description"] = x
-                        }
-                        if let x = repo.name {
-                            json["name"] = x
-                        }
-                        
-                        if let entity = RepositoryEntity(JSON: json) {
-                            entities.append(entity)
-                        }
+                        entities.append(coreData2Entity(repository: repo))
                     }
                     
                     presenter?.didRetrieveRepositories(entities)

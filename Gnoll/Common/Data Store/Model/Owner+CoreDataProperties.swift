@@ -26,7 +26,7 @@ extension Owner {
     @NSManaged public var id: Int64
     @NSManaged public var login: String?
     @NSManaged public var organizationsUrl: String?
-    @NSManaged public var type_: String?
+    @NSManaged public var ownerType: String?
     @NSManaged public var receivedEventsUrl: String?
     @NSManaged public var reposUrl: String?
     @NSManaged public var siteAdmin: Bool

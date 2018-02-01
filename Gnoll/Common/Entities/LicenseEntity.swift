@@ -14,7 +14,6 @@ class LicenseEntity: Mappable {
     var name: String?
     var spdxId: String?
     var url: String?
-    var repositories: [RepositoryEntity]?
     
     required init?(map: Map) {
         
@@ -26,7 +25,6 @@ class LicenseEntity: Mappable {
         name <- map["name"]
         spdxId <- map["spdx_id"]
         url <- map["url"]
-        repositories <- map["repositories"]
     }
 }
 

@@ -27,16 +27,12 @@
         </attribute>
         <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="organizationsUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="receivedEventsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="reposUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="siteAdmin" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="starredUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subscriptionsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type_" optional="YES" attributeType="String" syncable="YES">
-            <userInfo>
-                <entry key="sync.remoteKey" value="type"/>
-            </userInfo>
-        </attribute>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repository" inverseName="owner" inverseEntity="Repository" syncable="YES"/>
     </entity>
@@ -56,11 +52,6 @@
         <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="defaultBranch" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="deploymentsUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="description_" optional="YES" attributeType="String" syncable="YES">
-            <userInfo>
-                <entry key="sync.remoteKey" value="description"/>
-            </userInfo>
-        </attribute>
         <attribute name="downloadsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eventsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fork" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
@@ -100,10 +91,11 @@
         <attribute name="notificationsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="openIssues" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="openIssuesCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="private_" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pullsUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pushedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="releasesUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repositoryDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="repositoryPrivate" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="sshUrl" optional="YES" attributeType="String" syncable="YES"/>
@@ -123,9 +115,6 @@
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RepositoryQuery" inverseName="items" inverseEntity="RepositoryQuery" syncable="YES"/>
         <relationship name="license" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="License" inverseName="repositories" inverseEntity="License" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Owner" inverseName="repositories" inverseEntity="Owner" syncable="YES"/>
-        <userInfo>
-            <entry key="sync.remoteKey" value="private"/>
-        </userInfo>
     </entity>
     <entity name="RepositoryQuery" representedClassName="RepositoryQuery" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
