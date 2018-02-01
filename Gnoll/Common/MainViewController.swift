@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Font_Awesome_Swift
 
 class MainViewController: UITabBarController {
 
@@ -19,6 +20,10 @@ class MainViewController: UITabBarController {
                 for nvc in nav.childViewControllers {
                     if let vc = nvc as? RepositoriesViewController {
                         let _ = RepositoriesRouter.initRepositoriesModule(withView: vc)
+                        nav.tabBarItem.setFAIcon(icon: .FAGithub, size: nil, orientation: .up, textColor: UIColor.lightGray, backgroundColor: UIColor.clear, selectedTextColor: UIColor.blue, selectedBackgroundColor: UIColor.clear)
+                    } else {
+                        // TO DO: my repositories
+                        nav.tabBarItem.setFAIcon(icon: .FABook, size: nil, orientation: .up, textColor: UIColor.lightGray, backgroundColor: UIColor.clear, selectedTextColor: UIColor.blue, selectedBackgroundColor: UIColor.clear)
                     }
                 }
             }
