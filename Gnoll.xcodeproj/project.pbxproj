@@ -82,6 +82,15 @@
 		112AFE1C2023268600D9DA1E /* OwnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE1B2023268600D9DA1E /* OwnerTableViewCell.swift */; };
 		112AFE1D2023268600D9DA1E /* OwnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE1B2023268600D9DA1E /* OwnerTableViewCell.swift */; };
 		112AFE1E2023268600D9DA1E /* OwnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE1B2023268600D9DA1E /* OwnerTableViewCell.swift */; };
+		112AFE2E20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE2D20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift */; };
+		112AFE2F20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE2D20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift */; };
+		112AFE3020233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE2D20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift */; };
+		112AFE3220233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE3120233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift */; };
+		112AFE3320233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE3120233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift */; };
+		112AFE3420233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE3120233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift */; };
+		112AFE3620233CEE00D9DA1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE3520233CEE00D9DA1E /* Constants.swift */; };
+		112AFE3720233CEE00D9DA1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE3520233CEE00D9DA1E /* Constants.swift */; };
+		112AFE3820233CEE00D9DA1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112AFE3520233CEE00D9DA1E /* Constants.swift */; };
 		1140740D2020A64900EC0646 /* RepositoriesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140740C2020A64900EC0646 /* RepositoriesLocalDataManager.swift */; };
 		1140740E2020A64900EC0646 /* RepositoriesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140740C2020A64900EC0646 /* RepositoriesLocalDataManager.swift */; };
 		1140740F2020A64900EC0646 /* RepositoriesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1140740C2020A64900EC0646 /* RepositoriesLocalDataManager.swift */; };
@@ -156,6 +165,9 @@
 		112AFDFE202319C100D9DA1E /* RepositoryQuery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryQuery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		112AFE172023267900D9DA1E /* RepositoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		112AFE1B2023268600D9DA1E /* OwnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerTableViewCell.swift; sourceTree = "<group>"; };
+		112AFE2D20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesRemoteDataManager.swift; sourceTree = "<group>"; };
+		112AFE3120233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesLocalDataManager.swift; sourceTree = "<group>"; };
+		112AFE3520233CEE00D9DA1E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1140740C2020A64900EC0646 /* RepositoriesLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesLocalDataManager.swift; sourceTree = "<group>"; };
 		11506F36201F7664006300F9 /* Gnoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11506F39201F7664006300F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +267,8 @@
 		112AFE20202337B700D9DA1E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				112AFE2D20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift */,
+				112AFE3120233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -357,6 +371,7 @@
 				1107F2A120208385000E7579 /* Entities */,
 				116286C620200042007E12F4 /* Data Store */,
 				118FD6302020695200E17DEA /* MainViewController.swift */,
+				112AFE3520233CEE00D9DA1E /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -668,6 +683,7 @@
 				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
 				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
@@ -679,6 +695,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
@@ -715,6 +732,7 @@
 				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
 				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
@@ -726,6 +744,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
@@ -798,6 +817,7 @@
 				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
 				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
@@ -809,6 +829,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
@@ -843,6 +864,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112AFE2E20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift in Sources */,
 				1107F2B5202094BB000E7579 /* RepositoriesRemoteDataManager.swift in Sources */,
 				112AFE1C2023268600D9DA1E /* OwnerTableViewCell.swift in Sources */,
 				112AFE182023267900D9DA1E /* RepositoryDetailTableViewCell.swift in Sources */,
@@ -855,6 +877,7 @@
 				112AFE05202319C100D9DA1E /* Owner+CoreDataClass.swift in Sources */,
 				118FD63520206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
 				112AFDFF202319C100D9DA1E /* Repository+CoreDataClass.swift in Sources */,
+				112AFE3220233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */,
 				1140740D2020A64900EC0646 /* RepositoriesLocalDataManager.swift in Sources */,
 				1107F2B920209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				112AFDF42022E4FC00D9DA1E /* RepositoryDetailLocalDataManager.swift in Sources */,
@@ -875,6 +898,7 @@
 				1107F2B12020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				112AFE0E202319C100D9DA1E /* License+CoreDataProperties.swift in Sources */,
 				11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */,
+				112AFE3620233CEE00D9DA1E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,6 +906,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112AFE2F20233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift in Sources */,
 				1107F2B6202094BB000E7579 /* RepositoriesRemoteDataManager.swift in Sources */,
 				112AFE1D2023268600D9DA1E /* OwnerTableViewCell.swift in Sources */,
 				112AFE192023267900D9DA1E /* RepositoryDetailTableViewCell.swift in Sources */,
@@ -894,6 +919,7 @@
 				112AFE06202319C100D9DA1E /* Owner+CoreDataClass.swift in Sources */,
 				118FD6432020811A00E17DEA /* Gnoll.xcdatamodeld in Sources */,
 				112AFE00202319C100D9DA1E /* Repository+CoreDataClass.swift in Sources */,
+				112AFE3320233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */,
 				1140740E2020A64900EC0646 /* RepositoriesLocalDataManager.swift in Sources */,
 				1107F2BA20209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				112AFDF52022E4FC00D9DA1E /* RepositoryDetailLocalDataManager.swift in Sources */,
@@ -914,6 +940,7 @@
 				1107F2B22020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				112AFE0F202319C100D9DA1E /* License+CoreDataProperties.swift in Sources */,
 				118FD6322020695200E17DEA /* MainViewController.swift in Sources */,
+				112AFE3720233CEE00D9DA1E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +948,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112AFE3020233B8700D9DA1E /* MyRepositoriesRemoteDataManager.swift in Sources */,
 				1107F2B7202094BB000E7579 /* RepositoriesRemoteDataManager.swift in Sources */,
 				112AFE1E2023268600D9DA1E /* OwnerTableViewCell.swift in Sources */,
 				112AFE1A2023267900D9DA1E /* RepositoryDetailTableViewCell.swift in Sources */,
@@ -933,6 +961,7 @@
 				112AFE07202319C100D9DA1E /* Owner+CoreDataClass.swift in Sources */,
 				118FD6442020811B00E17DEA /* Gnoll.xcdatamodeld in Sources */,
 				112AFE01202319C100D9DA1E /* Repository+CoreDataClass.swift in Sources */,
+				112AFE3420233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */,
 				1140740F2020A64900EC0646 /* RepositoriesLocalDataManager.swift in Sources */,
 				1107F2BB20209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				112AFDF62022E4FC00D9DA1E /* RepositoryDetailLocalDataManager.swift in Sources */,
@@ -953,6 +982,7 @@
 				1107F2B32020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				112AFE10202319C100D9DA1E /* License+CoreDataProperties.swift in Sources */,
 				118FD6332020695200E17DEA /* MainViewController.swift in Sources */,
+				112AFE3820233CEE00D9DA1E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

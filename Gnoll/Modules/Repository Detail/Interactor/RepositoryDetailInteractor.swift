@@ -16,7 +16,11 @@ class RepositoryDetailInteractor: RepositoryDetailInteractorInputProtocol {
     
     func retrieveRepositoryDetails(withRepository repository: RepositoryEntity) {
         self.repository = repository
-        remoteDataManager?.retrieveRepositoryDetails(withRepository: repository)
+        if repository.forks > 0 {
+            remoteDataManager?.retrieveRepositoryDetails(withRepository: repository)
+        } else {
+            presenter?.didRetrieveRepositoryDetails(repository)
+        }
     }
     
     func coreData2Entity(repository: Repository) -> RepositoryEntity {

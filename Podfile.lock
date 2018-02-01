@@ -1,14 +1,15 @@
 PODS:
   - Alamofire (4.6.0)
   - DATASource (7.0.1)
-  - DATAStack (8.0.1)
+  - DATAStack (8.0.2)
   - Font-Awesome-Swift (1.7.2)
   - MBProgressHUD (1.1.0)
+  - OAuthSwift (1.2.0)
   - ObjectMapper (3.1.0)
-  - SDWebImage (4.2.3):
-    - SDWebImage/Core (= 4.2.3)
-  - SDWebImage/Core (4.2.3)
-  - Sync (4.1.0)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+  - Sync (4.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - DATAStack
   - Font-Awesome-Swift
   - MBProgressHUD
+  - OAuthSwift
   - ObjectMapper (~> 3.1)
   - SDWebImage (~> 4.0)
   - Sync
@@ -23,13 +25,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   DATASource: 8cc3060d145b8b1855859f92fbff52b1b1930c7e
-  DATAStack: 743c6f0f06a8141c2d42b31f293ba3a056a7d4ba
+  DATAStack: 9c415f6e7733eafb9cf5c076613bfb5958c407cb
   Font-Awesome-Swift: 83ab9db365379ee6025167cec67bdc5d3226a811
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
-  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
-  Sync: 8cee659aef49c08e00113eb96a42cb504c64bd75
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  Sync: e0f652f552935c63cbc911f588b3eebe70490402
 
-PODFILE CHECKSUM: 50eeac76f3c14b73631286f06f8c7952087d6c1e
+PODFILE CHECKSUM: 4a1839c0f5fb6123c92624fabaadecbb4584f5e1
 
 COCOAPODS: 1.4.0.beta.2

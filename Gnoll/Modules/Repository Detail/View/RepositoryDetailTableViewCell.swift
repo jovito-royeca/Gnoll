@@ -40,7 +40,7 @@ class RepositoryDetailTableViewCell: UITableViewCell {
         if repository.private_ {
             repositoryAvatar.setFAIconWithName(icon: .FALock, textColor: UIColor.black)
         } else {
-            repositoryAvatar.setFAIconWithName(icon: .FAUnlock, textColor: UIColor.black)
+            repositoryAvatar.setFAIconWithName(icon: .FABook, textColor: UIColor.black)
         }
         
         nameLabel.text = repository.name

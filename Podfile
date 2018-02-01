@@ -10,6 +10,7 @@ target 'Gnoll' do
     pod 'Font-Awesome-Swift'#, :git => 'https://github.com/Vaberer/Font-Awesome-Swift', :branch => 'swift-3'
     pod 'MBProgressHUD'
     pod 'SDWebImage', '~> 4.0'
+    pod 'OAuthSwift'#, '~> 1.2.0'
 end
 
 target 'GnollTests' do
@@ -21,6 +22,7 @@ target 'GnollTests' do
     pod 'Font-Awesome-Swift'#, :git => 'https://github.com/Vaberer/Font-Awesome-Swift', :branch => 'swift-3'
     pod 'MBProgressHUD'
     pod 'SDWebImage', '~> 4.0'
+    pod 'OAuthSwift'#, '~> 1.2.0'
 end
 
 target 'GnollUITests' do
@@ -32,5 +34,6 @@ target 'GnollUITests' do
     pod 'Font-Awesome-Swift'#, :git => 'https://github.com/Vaberer/Font-Awesome-Swift', :branch => 'swift-3'
     pod 'MBProgressHUD'
     pod 'SDWebImage', '~> 4.0'
+    pod 'OAuthSwift'#, '~> 1.2.0'
 end
 
