@@ -87,25 +87,26 @@ extension Repository {
     @NSManaged public var url: String?
     @NSManaged public var watchers: Int32
     @NSManaged public var watchersCount: Int32
-    @NSManaged public var items: NSSet?
+    @NSManaged public var repositoryQuery: RepositoryQuery?
     @NSManaged public var license: License?
     @NSManaged public var owner: Owner?
 
 }
 
-// MARK: Generated accessors for items
-extension Repository {
+//// MARK: Generated accessors for items
+//extension Repository {
+//
+//    @objc(addItemsObject:)
+//    @NSManaged public func addToItems(_ value: RepositoryQuery)
+//
+//    @objc(removeItemsObject:)
+//    @NSManaged public func removeFromItems(_ value: RepositoryQuery)
+//
+//    @objc(addItems:)
+//    @NSManaged public func addToItems(_ values: NSSet)
+//
+//    @objc(removeItems:)
+//    @NSManaged public func removeFromItems(_ values: NSSet)
+//
+//}
 
-    @objc(addItemsObject:)
-    @NSManaged public func addToItems(_ value: RepositoryQuery)
-
-    @objc(removeItemsObject:)
-    @NSManaged public func removeFromItems(_ value: RepositoryQuery)
-
-    @objc(addItems:)
-    @NSManaged public func addToItems(_ values: NSSet)
-
-    @objc(removeItems:)
-    @NSManaged public func removeFromItems(_ values: NSSet)
-
-}

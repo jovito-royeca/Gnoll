@@ -71,6 +71,6 @@ protocol RepositoriesRemoteDataManagerOutputProtocol: class {
 protocol RepositoriesLocalDataManagerInputProtocol: class {
     // INTERACTOR -> LOCALDATAMANAGER
     func retrieveRepositories(withQuery query: String) throws -> [Repository]
-    func saveRepositoryQuery(json: [String: Any])
+    func saveRepositoryQuery(withQuery query: String, json: [String: Any])
 }
 
