@@ -9,7 +9,7 @@
 import UIKit
 
 class RepositoriesRouter: RepositoriesRouterProtocol {
-    class func initRepositoriesModule(withView view: RepositoriesViewController) {
+    class func initModule(withView view: RepositoriesViewController) {
         let presenter: RepositoriesPresenterProtocol & RepositoriesInteractorOutputProtocol = RepositoriesPresenter()
         let interactor: RepositoriesInteractorInputProtocol & RepositoriesRemoteDataManagerOutputProtocol = RepositoriesInteractor()
         let localDataManager: RepositoriesLocalDataManagerInputProtocol = RepositoriesLocalDataManager()
@@ -27,7 +27,7 @@ class RepositoriesRouter: RepositoriesRouterProtocol {
     }
     
     func presentRepositoryDetailsScreen(from view: RepositoriesViewProtocol, forRepository repository: RepositoryEntity) {
-        let router = RepositoryDetailRouter.createRepositoryDetailModule(withRepository: repository)
+        let router = RepositoryDetailRouter.createModule(withRepository: repository)
         
         if let sourceView = view as? UIViewController {
             sourceView.navigationController?.pushViewController(router, animated: true)

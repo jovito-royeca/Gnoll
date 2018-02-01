@@ -47,7 +47,7 @@ protocol RepositoryDetailPresenterProtocol: class {
 
 // MARK: Router
 protocol RepositoryDetailRouterProtocol: class {
-    static func createRepositoryDetailModule(withRepository repository: RepositoryEntity) -> UIViewController
+    static func createModule(withRepository repository: RepositoryEntity) -> UIViewController
 }
 
 // MARK: Helpers

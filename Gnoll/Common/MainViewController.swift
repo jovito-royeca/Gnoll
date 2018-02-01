@@ -19,10 +19,10 @@ class MainViewController: UITabBarController {
             if let nav = vc as? UINavigationController {
                 for nvc in nav.childViewControllers {
                     if let vc = nvc as? RepositoriesViewController {
-                        let _ = RepositoriesRouter.initRepositoriesModule(withView: vc)
+                        let _ = RepositoriesRouter.initModule(withView: vc)
                         nav.tabBarItem.setFAIcon(icon: .FAGithub, size: nil, orientation: .up, textColor: UIColor.lightGray, backgroundColor: UIColor.clear, selectedTextColor: UIColor.blue, selectedBackgroundColor: UIColor.clear)
-                    } else {
-                        // TO DO: my repositories
+                    } else if let vc = nvc as? MyRepositoriesViewController {
+                        let _ = MyRepositoriesRouter.initModule(withView: vc)
                         nav.tabBarItem.setFAIcon(icon: .FABook, size: nil, orientation: .up, textColor: UIColor.lightGray, backgroundColor: UIColor.clear, selectedTextColor: UIColor.blue, selectedBackgroundColor: UIColor.clear)
                     }
                 }

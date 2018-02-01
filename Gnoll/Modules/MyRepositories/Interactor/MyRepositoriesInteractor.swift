@@ -1,19 +1,23 @@
 //
-//  RepositoriesInteractor.swift
+//  MyRepositoriesInteractor.swift
 //  Gnoll
 //
-//  Created by Jovito Royeca on 30/01/2018.
+//  Created by Jovito Royeca on 01/02/2018.
 //  Copyright © 2018 Jovito Royeca. All rights reserved.
 //
 
 import UIKit
-import Sync
+import KeychainAccess
 
-class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
-    weak var presenter: RepositoriesInteractorOutputProtocol?
-    var localDataManager: RepositoriesLocalDataManagerInputProtocol?
-    var remoteDataManager: RepositoriesRemoteDataManagerInputProtocol?
+class MyRepositoriesInteractor: MyRepositoriesInteractorInputProtocol {
+    weak var presenter: MyRepositoriesInteractorOutputProtocol?
+    var localDataManager: MyRepositoriesLocalDataManagerInputProtocol?
+    var remoteDataManager: MyRepositoriesRemoteDataManagerInputProtocol?
     var query: String?
+    
+    func checkAuthentication() -> Bool {
+        return true
+    }
     
     func retrieveRepositories(withQuery query: String?) {
         self.query = query
@@ -36,7 +40,6 @@ class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
                 } else {
                     remoteDataManager?.retrieveRepositories(withQuery: query)
                 }
-                
             }
         } else {
             presenter?.didRetrieveRepositories(entities)
@@ -44,7 +47,7 @@ class RepositoriesInteractor: RepositoriesInteractorInputProtocol {
     }
 }
 
-extension RepositoriesInteractor: RepositoriesRemoteDataManagerOutputProtocol {
+extension MyRepositoriesInteractor: MyRepositoriesRemoteDataManagerOutputProtocol {
     func onRepositoriesRetrieved(_ json: [String: Any]) {
         if let query = query {
             let completion = { () -> Void  in
@@ -68,3 +71,4 @@ extension RepositoriesInteractor: RepositoriesRemoteDataManagerOutputProtocol {
     }
     
 }
+

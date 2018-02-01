@@ -49,7 +49,7 @@ protocol RepositoriesPresenterProtocol: class {
 
 // MARK: Router
 protocol RepositoriesRouterProtocol: class {
-    static func initRepositoriesModule(withView view: RepositoriesViewController)
+    static func initModule(withView view: RepositoriesViewController)
     // PRESENTER -> ROUTER
     func presentRepositoryDetailsScreen(from view: RepositoriesViewProtocol, forRepository repository: RepositoryEntity)
 }

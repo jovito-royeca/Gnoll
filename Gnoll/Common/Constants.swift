@@ -8,6 +8,9 @@
 
 import Foundation
 
-let kGitHubClientID = "660300e64fbc791535e3"
-let kGitHubClientSecret = "40708f3557eaac053330995aef08925664f807db"
+let kGitHubAccessToken    = "kGitHubAccessToken"
+let kGitHubClientID       = "660300e64fbc791535e3"
+let kGitHubClientSecret   = "40708f3557eaac053330995aef08925664f807db"
+let kGitHubAuthorizeUrl   = "https://github.com/login/oauth/authorize"
+let kGitHubAccessTokenUrl = "https://github.com/login/oauth/access_token"
 

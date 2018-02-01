@@ -9,7 +9,7 @@
 import UIKit
 
 class RepositoryDetailRouter: RepositoryDetailRouterProtocol {
-    class func createRepositoryDetailModule(withRepository repository: RepositoryEntity) -> UIViewController {
+    class func createModule(withRepository repository: RepositoryEntity) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyboard.instantiateViewController(withIdentifier: "RepositoryDetailViewController")
         
@@ -34,3 +34,5 @@ class RepositoryDetailRouter: RepositoryDetailRouterProtocol {
         
     }
 }
+
+

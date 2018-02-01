@@ -11,6 +11,7 @@ target 'Gnoll' do
     pod 'MBProgressHUD'
     pod 'SDWebImage', '~> 4.0'
     pod 'OAuthSwift'#, '~> 1.2.0'
+    pod 'KeychainAccess'
 end
 
 target 'GnollTests' do
@@ -23,6 +24,7 @@ target 'GnollTests' do
     pod 'MBProgressHUD'
     pod 'SDWebImage', '~> 4.0'
     pod 'OAuthSwift'#, '~> 1.2.0'
+    pod 'KeychainAccess'
 end
 
 target 'GnollUITests' do
@@ -35,5 +37,6 @@ target 'GnollUITests' do
     pod 'MBProgressHUD'
     pod 'SDWebImage', '~> 4.0'
     pod 'OAuthSwift'#, '~> 1.2.0'
+    pod 'KeychainAccess'
 end
 

@@ -115,6 +115,22 @@
 		118FD63F20206EA900E17DEA /* RepositoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FD63C20206EA900E17DEA /* RepositoriesProtocols.swift */; };
 		118FD6432020811A00E17DEA /* Gnoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */; };
 		118FD6442020811B00E17DEA /* Gnoll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11506F40201F7664006300F9 /* Gnoll.xcdatamodeld */; };
+		11C45A6B20234B85005511CF /* MyRepositoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6A20234B84005511CF /* MyRepositoriesProtocols.swift */; };
+		11C45A6D20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */; };
+		11C45A6E20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */; };
+		11C45A6F20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */; };
+		11C45A7120234DE1005511CF /* MyRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7020234DE1005511CF /* MyRepositoriesPresenter.swift */; };
+		11C45A7220234DE1005511CF /* MyRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7020234DE1005511CF /* MyRepositoriesPresenter.swift */; };
+		11C45A7320234DE1005511CF /* MyRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7020234DE1005511CF /* MyRepositoriesPresenter.swift */; };
+		11C45A7520234E57005511CF /* MyRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7420234E57005511CF /* MyRepositoriesInteractor.swift */; };
+		11C45A7620234E57005511CF /* MyRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7420234E57005511CF /* MyRepositoriesInteractor.swift */; };
+		11C45A7720234E57005511CF /* MyRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7420234E57005511CF /* MyRepositoriesInteractor.swift */; };
+		11C45A7920234EDA005511CF /* MyRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7820234EDA005511CF /* MyRepositoriesRouter.swift */; };
+		11C45A7A20234EDA005511CF /* MyRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7820234EDA005511CF /* MyRepositoriesRouter.swift */; };
+		11C45A7B20234EDA005511CF /* MyRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7820234EDA005511CF /* MyRepositoriesRouter.swift */; };
+		11C45A7D2023535A005511CF /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7C2023535A005511CF /* DataMapper.swift */; };
+		11C45A7E2023535A005511CF /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7C2023535A005511CF /* DataMapper.swift */; };
+		11C45A7F2023535A005511CF /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C45A7C2023535A005511CF /* DataMapper.swift */; };
 		269384F67217D695798A9EFA /* Pods_GnollUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0A16AA9997D18E5D7E88F6 /* Pods_GnollUITests.framework */; };
 		583917D4F5A42E7040316762 /* Pods_Gnoll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706531F5425B5E5FF6B53DC6 /* Pods_Gnoll.framework */; };
 		74AFEE1CC016FF37E0F7760B /* Pods_GnollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F0073FB804EBD55502A792 /* Pods_GnollTests.framework */; };
@@ -186,6 +202,12 @@
 		118FD63420206A7E00E17DEA /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		118FD63820206D4A00E17DEA /* RepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRouter.swift; sourceTree = "<group>"; };
 		118FD63C20206EA900E17DEA /* RepositoriesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesProtocols.swift; sourceTree = "<group>"; };
+		11C45A6A20234B84005511CF /* MyRepositoriesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRepositoriesProtocols.swift; sourceTree = "<group>"; };
+		11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesViewController.swift; sourceTree = "<group>"; };
+		11C45A7020234DE1005511CF /* MyRepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesPresenter.swift; sourceTree = "<group>"; };
+		11C45A7420234E57005511CF /* MyRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesInteractor.swift; sourceTree = "<group>"; };
+		11C45A7820234EDA005511CF /* MyRepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRepositoriesRouter.swift; sourceTree = "<group>"; };
+		11C45A7C2023535A005511CF /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		3F0111F4E1A42A305C728A3F /* Pods-GnollUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnollUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GnollUITests/Pods-GnollUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		706531F5425B5E5FF6B53DC6 /* Pods_Gnoll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gnoll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE983A0386269E8EB9EE031 /* Pods-GnollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnollTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GnollTests/Pods-GnollTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +277,7 @@
 		112AFE1F202337A300D9DA1E /* MyRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				11C45A6A20234B84005511CF /* MyRepositoriesProtocols.swift */,
 				112AFE24202337E800D9DA1E /* View */,
 				112AFE23202337DD00D9DA1E /* Interactor */,
 				112AFE22202337D600D9DA1E /* Presenter */,
@@ -276,6 +299,7 @@
 		112AFE21202337CE00D9DA1E /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				11C45A7820234EDA005511CF /* MyRepositoriesRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -283,6 +307,7 @@
 		112AFE22202337D600D9DA1E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				11C45A7020234DE1005511CF /* MyRepositoriesPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -290,6 +315,7 @@
 		112AFE23202337DD00D9DA1E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				11C45A7420234E57005511CF /* MyRepositoriesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -297,6 +323,7 @@
 		112AFE24202337E800D9DA1E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11C45A6C20234BCB005511CF /* MyRepositoriesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				118FD6402020700300E17DEA /* Model */,
+				11C45A7C2023535A005511CF /* DataMapper.swift */,
 			);
 			path = "Data Store";
 			sourceTree = "<group>";
@@ -682,6 +710,7 @@
 				"${BUILT_PRODUCTS_DIR}/DATASource/DATASource.framework",
 				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
 				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -694,6 +723,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATASource.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -731,6 +761,7 @@
 				"${BUILT_PRODUCTS_DIR}/DATASource/DATASource.framework",
 				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
 				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -743,6 +774,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATASource.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -816,6 +848,7 @@
 				"${BUILT_PRODUCTS_DIR}/DATASource/DATASource.framework",
 				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
 				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -828,6 +861,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATASource.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -875,6 +909,7 @@
 				1107F2AB20208926000E7579 /* OwnerEntity.swift in Sources */,
 				112AFDE42022DCFB00D9DA1E /* RepositoryDetailViewController.swift in Sources */,
 				112AFE05202319C100D9DA1E /* Owner+CoreDataClass.swift in Sources */,
+				11C45A6B20234B85005511CF /* MyRepositoriesProtocols.swift in Sources */,
 				118FD63520206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
 				112AFDFF202319C100D9DA1E /* Repository+CoreDataClass.swift in Sources */,
 				112AFE3220233B9C00D9DA1E /* MyRepositoriesLocalDataManager.swift in Sources */,
@@ -884,11 +919,14 @@
 				112AFDE02022D86E00D9DA1E /* RepositoryDetailProtocols.swift in Sources */,
 				118FD63D20206EA900E17DEA /* RepositoriesProtocols.swift in Sources */,
 				112AFE08202319C100D9DA1E /* Owner+CoreDataProperties.swift in Sources */,
+				11C45A6D20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */,
+				11C45A7120234DE1005511CF /* MyRepositoriesPresenter.swift in Sources */,
 				112AFE11202319C100D9DA1E /* RepositoryQuery+CoreDataClass.swift in Sources */,
 				118FD63920206D4A00E17DEA /* RepositoriesRouter.swift in Sources */,
 				112AFDF02022E4E800D9DA1E /* RepositoryDetailRemoteDataManager.swift in Sources */,
 				118FD6312020695200E17DEA /* MainViewController.swift in Sources */,
 				112AFDE82022DF3E00D9DA1E /* RepositoryDetailPresenter.swift in Sources */,
+				11C45A7920234EDA005511CF /* MyRepositoriesRouter.swift in Sources */,
 				11506F42201F7664006300F9 /* Gnoll.xcdatamodeld in Sources */,
 				1107F2A720208917000E7579 /* RepositoryEntity.swift in Sources */,
 				112AFDD42022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */,
@@ -898,7 +936,9 @@
 				1107F2B12020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				112AFE0E202319C100D9DA1E /* License+CoreDataProperties.swift in Sources */,
 				11506F3A201F7664006300F9 /* AppDelegate.swift in Sources */,
+				11C45A7D2023535A005511CF /* DataMapper.swift in Sources */,
 				112AFE3620233CEE00D9DA1E /* Constants.swift in Sources */,
+				11C45A7520234E57005511CF /* MyRepositoriesInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,6 +964,7 @@
 				1107F2BA20209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				112AFDF52022E4FC00D9DA1E /* RepositoryDetailLocalDataManager.swift in Sources */,
 				112AFDE12022D86E00D9DA1E /* RepositoryDetailProtocols.swift in Sources */,
+				11C45A7A20234EDA005511CF /* MyRepositoriesRouter.swift in Sources */,
 				118FD63A20206D4A00E17DEA /* RepositoriesRouter.swift in Sources */,
 				112AFE09202319C100D9DA1E /* Owner+CoreDataProperties.swift in Sources */,
 				112AFE12202319C100D9DA1E /* RepositoryQuery+CoreDataClass.swift in Sources */,
@@ -931,11 +972,15 @@
 				112AFDF12022E4E800D9DA1E /* RepositoryDetailRemoteDataManager.swift in Sources */,
 				118FD63620206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
 				112AFDE92022DF3E00D9DA1E /* RepositoryDetailPresenter.swift in Sources */,
+				11C45A7E2023535A005511CF /* DataMapper.swift in Sources */,
 				118FD63E20206EA900E17DEA /* RepositoriesProtocols.swift in Sources */,
 				1107F2A820208917000E7579 /* RepositoryEntity.swift in Sources */,
 				112AFDD52022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */,
+				11C45A7620234E57005511CF /* MyRepositoriesInteractor.swift in Sources */,
 				112AFDED2022E0C900D9DA1E /* RepositoryDetailInteractor.swift in Sources */,
 				112AFDDD2022D7CB00D9DA1E /* RepositoryDetailRouter.swift in Sources */,
+				11C45A6E20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */,
+				11C45A7220234DE1005511CF /* MyRepositoriesPresenter.swift in Sources */,
 				112AFDD92022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */,
 				1107F2B22020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				112AFE0F202319C100D9DA1E /* License+CoreDataProperties.swift in Sources */,
@@ -966,6 +1011,7 @@
 				1107F2BB20209607000E7579 /* RepositoriesPresenter.swift in Sources */,
 				112AFDF62022E4FC00D9DA1E /* RepositoryDetailLocalDataManager.swift in Sources */,
 				112AFDE22022D86E00D9DA1E /* RepositoryDetailProtocols.swift in Sources */,
+				11C45A7B20234EDA005511CF /* MyRepositoriesRouter.swift in Sources */,
 				118FD63B20206D4A00E17DEA /* RepositoriesRouter.swift in Sources */,
 				112AFE0A202319C100D9DA1E /* Owner+CoreDataProperties.swift in Sources */,
 				112AFE13202319C100D9DA1E /* RepositoryQuery+CoreDataClass.swift in Sources */,
@@ -973,11 +1019,15 @@
 				112AFDF22022E4E800D9DA1E /* RepositoryDetailRemoteDataManager.swift in Sources */,
 				118FD63720206A7E00E17DEA /* RepositoriesViewController.swift in Sources */,
 				112AFDEA2022DF3E00D9DA1E /* RepositoryDetailPresenter.swift in Sources */,
+				11C45A7F2023535A005511CF /* DataMapper.swift in Sources */,
 				118FD63F20206EA900E17DEA /* RepositoriesProtocols.swift in Sources */,
 				1107F2A920208917000E7579 /* RepositoryEntity.swift in Sources */,
 				112AFDD62022913D00D9DA1E /* RepositoryTableViewCell.swift in Sources */,
+				11C45A7720234E57005511CF /* MyRepositoriesInteractor.swift in Sources */,
 				112AFDEE2022E0C900D9DA1E /* RepositoryDetailInteractor.swift in Sources */,
 				112AFDDE2022D7CB00D9DA1E /* RepositoryDetailRouter.swift in Sources */,
+				11C45A6F20234BCB005511CF /* MyRepositoriesViewController.swift in Sources */,
+				11C45A7320234DE1005511CF /* MyRepositoriesPresenter.swift in Sources */,
 				112AFDDA2022BE3900D9DA1E /* MessageTableViewCell.swift in Sources */,
 				1107F2B32020941F000E7579 /* RepositoriesInteractor.swift in Sources */,
 				112AFE10202319C100D9DA1E /* License+CoreDataProperties.swift in Sources */,

@@ -13,7 +13,7 @@ protocol MyRepositoriesViewProtocol: class {
     var presenter: MyRepositoriesPresenterProtocol? { get set }
     
     // PRESENTER -> VIEW
-    func showMyRepositories(_ repositories: [RepositoryEntity])
+    func showRepositories(_ repositories: [RepositoryEntity])
     func showError(_ error: Error)
     func showLoading()
     func hideLoading()
@@ -26,6 +26,7 @@ protocol MyRepositoriesInteractorInputProtocol: class {
     var remoteDataManager: MyRepositoriesRemoteDataManagerInputProtocol? { get set }
     
     // PRESENTER -> INTERACTOR
+    func checkAuthentication() -> Bool
     func retrieveRepositories(withQuery query: String?)
 }
 
@@ -42,16 +43,17 @@ protocol MyRepositoriesPresenterProtocol: class {
     var router: MyRepositoriesRouterProtocol? { get set }
     
     // VIEW -> PRESENTER
-    func viewDidLoad()
+    func viewDidAppear()
     func retrieveRepositories(withQuery query: String?)
     func showRepositoryDetails(forRepository repository: RepositoryEntity)
 }
 
 // MARK: Router
 protocol MyRepositoriesRouterProtocol: class {
-    static func initMyRepositoriesModule(withView view: MyRepositoriesViewController)
+    static func initModule(withView view: MyRepositoriesViewController)
     // PRESENTER -> ROUTER
-    func presentMyRepositoryDetailsScreen(from view: MyRepositoriesViewProtocol, forRepository repository: RepositoryEntity)
+    func presentRepositoryDetailsScreen(from view: MyRepositoriesViewProtocol, forRepository repository: RepositoryEntity)
+    func presentLoginScreen(from view: MyRepositoriesViewProtocol)
 }
 
 // MARK: Helpers
